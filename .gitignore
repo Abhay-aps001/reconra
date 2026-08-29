@@ -1,0 +1,33 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# JavaScript
+node_modules/
+.next/
+out/
+dist/
+.pnpm-store/
+
+# Local/editor
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated/private evaluation outputs
+data/generated/
+artifacts/
+playwright-report/
+test-results/
