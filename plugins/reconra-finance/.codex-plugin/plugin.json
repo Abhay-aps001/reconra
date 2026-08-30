@@ -1,0 +1,16 @@
+{
+  "name": "reconra-finance",
+  "version": "0.1.0",
+  "description": "Finance-controller governance for Reconra reconciliation work.",
+  "author": { "name": "Reconra" },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Reconra Finance",
+    "shortDescription": "Safe finance-controller rules for Reconra.",
+    "longDescription": "Provides finance-controller rules for auditable, deterministic-first settlement reconciliation.",
+    "developerName": "Reconra",
+    "category": "Productivity",
+    "capabilities": ["Guidance"],
+    "defaultPrompt": "Apply the Reconra finance-controller rules to this reconciliation task."
+  }
+}
