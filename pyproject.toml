@@ -16,7 +16,7 @@ dev = ["hypothesis>=6.0", "mypy>=1.13", "pytest>=8.0", "ruff>=0.8"]
 where = ["engine"]
 
 [tool.pytest.ini_options]
-pythonpath = ["apps/api", "engine"]
+pythonpath = [".", "apps/api", "engine"]
 testpaths = ["tests"]
 
 [tool.ruff]
