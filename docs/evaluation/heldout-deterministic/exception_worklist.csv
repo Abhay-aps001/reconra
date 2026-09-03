@@ -1,0 +1,18 @@
+exception_id,break_class,resolution_status,financial_impact_paise,financial_impact_display,evidence
+duplicate-order-order_clean_004,DUPLICATE_LEDGER_ROW,ESCALATED,0,0.00,identical_canonical_order_rows | order_id:order_clean_004
+residual-bank-bank_narration_008,UNRESOLVABLE,ESCALATED,1362900,"13,629.00",bank_transaction_id:bank_narration_008 | no_supported_candidate
+residual-bank-bank_scenario_003,UNRESOLVABLE,ESCALATED,1313300,"13,133.00",bank_transaction_id:bank_scenario_003 | fuzzy_candidate_discovered
+residual-bank-bank_scenario_009,UNRESOLVABLE,ESCALATED,330800,"3,308.00",bank_transaction_id:bank_scenario_009 | no_supported_candidate
+residual-bank-duplicate_bank_scenario_003,UNRESOLVABLE,ESCALATED,1313300,"13,133.00",bank_transaction_id:duplicate_bank_scenario_003 | fuzzy_candidate_discovered
+residual-payment-pay_clean_000,MISSING_SETTLEMENT,ESCALATED,0,0.00,no_unique_settlement_entry | payment_id:pay_clean_000
+residual-settlement-entry-dispute_adjustment_002,MISSING_PAYMENT,ESCALATED,0,0.00,no_unique_payment | settlement_entry_id:dispute_adjustment_002
+residual-settlement-entry-general_adjustment_006,MISSING_PAYMENT,ESCALATED,0,0.00,no_unique_payment | settlement_entry_id:general_adjustment_006
+residual-settlement-entry-partial_refund_014,MISSING_PAYMENT,ESCALATED,0,0.00,no_unique_payment | settlement_entry_id:partial_refund_014
+residual-settlement-entry-recon_clean_000,MISSING_PAYMENT,ESCALATED,0,0.00,no_unique_payment | settlement_entry_id:recon_clean_000
+residual-settlement-entry-recon_clean_012,MISSING_PAYMENT,ESCALATED,0,0.00,no_unique_payment | settlement_entry_id:recon_clean_012
+residual-settlement-entry-recon_clean_019,MISSING_PAYMENT,ESCALATED,0,0.00,no_unique_payment | settlement_entry_id:recon_clean_019
+residual-settlement-entry-refund_later_015,MISSING_PAYMENT,ESCALATED,0,0.00,no_unique_payment | settlement_entry_id:refund_later_015
+residual-settlement-setl_scenario_003,MISSING_BANK_CREDIT,ESCALATED,0,0.00,expected_net_paise:1313300 | no_exact_bank_evidence | settlement_id:setl_scenario_003
+residual-settlement-setl_scenario_008,MISSING_BANK_CREDIT,ESCALATED,0,0.00,expected_net_paise:1362900 | no_exact_bank_evidence | settlement_id:setl_scenario_008
+residual-settlement-setl_scenario_009,MISSING_BANK_CREDIT,ESCALATED,0,0.00,expected_net_paise:330800 | no_exact_bank_evidence | settlement_id:setl_scenario_009
+residual-settlement-setl_scenario_010,MISSING_BANK_CREDIT,ESCALATED,0,0.00,expected_net_paise:1148600 | no_exact_bank_evidence | settlement_id:setl_scenario_010

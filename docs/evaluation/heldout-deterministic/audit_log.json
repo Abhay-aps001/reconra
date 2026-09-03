@@ -1,0 +1,4246 @@
+[
+  {
+    "action": "MISSING_PAYMENT",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "ESCALATED",
+    "event_id": "event_0271c0d3b0b731a0d36e",
+    "evidence": [
+      "settlement_entry_id:recon_clean_019",
+      "no_unique_payment"
+    ],
+    "exception_id": "residual-settlement-entry-recon_clean_019",
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_0387dd64b6064e60e598",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_0908403c0b9c188d1282",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_0abb589dffe2dabfbfcc",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_0ae362faf8cf29f91a59",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 22271000,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 115032972
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 18291400,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 119012572
+    },
+    "decision": "MATCHED",
+    "event_id": "event_0b189d275afecd9affe4",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 3979600,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_0bdf6064319f25663652",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_0c0fd52c9c63ec1af0de",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_0ddc7a253dd5bea5b36c",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_0ea478d18ae29bf8e668",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_10d54ea27698b1a1be83",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_10d734972495cd768bd6",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_1172e48bc80e9117e8e2",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 7653300,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 129650672
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 2250700,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 135053272
+    },
+    "decision": "MATCHED",
+    "event_id": "event_1212e8c892b8b4d81bf5",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 5402600,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_1264e8d39d71a617cc00",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_14f3ed5d872a2d040a4e",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 122362200,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 14941772
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 121534000,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 15769972
+    },
+    "decision": "MATCHED",
+    "event_id": "event_17208ff3dfb2b3a8c07b",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 828200,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_190d353be69fa913eb8a",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_1aef649e18ace71b1a8e",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_1b83077ee1e0599bd66d",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_1d821414343b7555ab98",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_1daa63d7a37a8b27ae83",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_1dbd233cbaf9c76d2b87",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_1e8807cb892b78fcae28",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_1ef7e6796045ba4ab8ff",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_1fe7c9834f665880ddb5",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_22bc018000ae138ef729",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_23e84478c753682a3f5b",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "MISSING_PAYMENT",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "ESCALATED",
+    "event_id": "event_23efb1c8879f2891ad64",
+    "evidence": [
+      "settlement_entry_id:general_adjustment_006",
+      "no_unique_payment"
+    ],
+    "exception_id": "residual-settlement-entry-general_adjustment_006",
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_240c7b845c2ee5a920d2",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_25343f48ce5553c7203f",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_2560084dd18e3c87d442",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 82265500,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 55038472
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 76695600,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 60608372
+    },
+    "decision": "MATCHED",
+    "event_id": "event_26154cdfd09d405edcd8",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 5569900,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_2656da80db7a002e47c2",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_26c281789a608d9d2624",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_270e44ef5e3b0f235b90",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 129202464,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 8101508
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 128685264,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 8618708
+    },
+    "decision": "MATCHED",
+    "event_id": "event_27bba1313ba8b0bf50ba",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 517200,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_289cfd5a6c8d3a40056e",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_29b017e1285480cc5bcf",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_2d18988cabfac5e09d66",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_2db4a23baf671b364bd6",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_2e0be5227d41c17bd77a",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_2e48b9d47e5f895a5f5b",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_2eb11e6b99fc8674ad59",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_30ef50c0ab140b3529cf",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 50933200,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 86370772
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 45373300,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 91930672
+    },
+    "decision": "MATCHED",
+    "event_id": "event_31acb7291bae1e69d2d9",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 5559900,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_32cce57179f3a2fae869",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 132983672,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 4320300
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 132101797,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 5202175
+    },
+    "decision": "MATCHED",
+    "event_id": "event_335c496838a0c79aade7",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 881875,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_35103d5ba319353e51d8",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_35ef134a0ea61868a070",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 126609763,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 10694209
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 126060363,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 11243609
+    },
+    "decision": "MATCHED",
+    "event_id": "event_362fcab88817a3106372",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 549400,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_369605342f28349d91a7",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "MISSING_SETTLEMENT",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "ESCALATED",
+    "event_id": "event_36f28113c57ac929ac9a",
+    "evidence": [
+      "payment_id:pay_clean_000",
+      "no_unique_settlement_entry"
+    ],
+    "exception_id": "residual-payment-pay_clean_000",
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_389abf05dcd303077c04",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_3987a70d0a60ba1bac5c",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_3a034c0fe5f10e56b27b",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "UNRESOLVED_BANK_RESIDUAL",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 132983672,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 4320300
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 132983672,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 4320300
+    },
+    "decision": "ESCALATED",
+    "event_id": "event_3a0a715c836711849abd",
+    "evidence": [
+      "bank_transaction_id:bank_scenario_009",
+      "no_supported_candidate"
+    ],
+    "exception_id": "residual-bank-bank_scenario_009",
+    "financial_impact_paise": 330800,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 62496000,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 74807972
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 58093100,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 79210872
+    },
+    "decision": "MATCHED",
+    "event_id": "event_3a1fcb76c62fed19f782",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 4402900,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_3bbe5c65ce3c55372129",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "MISSING_PAYMENT",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "ESCALATED",
+    "event_id": "event_3f42e22748e5bb88bdd4",
+    "evidence": [
+      "settlement_entry_id:partial_refund_014",
+      "no_unique_payment"
+    ],
+    "exception_id": "residual-settlement-entry-partial_refund_014",
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 130184098,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 7119874
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 129654564,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 7649408
+    },
+    "decision": "MATCHED",
+    "event_id": "event_4337705b101a94053ee2",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 529534,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_43f2747f8d2ee35ff069",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_4454ccfa47cd31e2a430",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "MISSING_PAYMENT",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "ESCALATED",
+    "event_id": "event_44c1fc4ee42c4d3b4b8e",
+    "evidence": [
+      "settlement_entry_id:dispute_adjustment_002",
+      "no_unique_payment"
+    ],
+    "exception_id": "residual-settlement-entry-dispute_adjustment_002",
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_45b715ad29848d9b5dfa",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 69625300,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 67678672
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 62496000,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 74807972
+    },
+    "decision": "MATCHED",
+    "event_id": "event_461061031249edc30482",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 7129300,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 126060363,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 11243609
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 125925600,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 11378372
+    },
+    "decision": "MATCHED",
+    "event_id": "event_46c221c25c93ce649760",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 134763,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 45373300,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 91930672
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 36089800,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 101214172
+    },
+    "decision": "MATCHED",
+    "event_id": "event_473b50b07f8c47749616",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 9283500,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_48a65cad1cb3834aa3b1",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "MISSING_PAYMENT",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "ESCALATED",
+    "event_id": "event_49c237d3419b7abcffb2",
+    "evidence": [
+      "settlement_entry_id:recon_clean_000",
+      "no_unique_payment"
+    ],
+    "exception_id": "residual-settlement-entry-recon_clean_000",
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_4c85c5663d3a455bed6f",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_4e23302dfa10205031cf",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_4f916d0ceaceb770b1ef",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_50cc3ee65353a9a54304",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_51cbe826deee16b50905",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_51dbbe93b206f7748de6",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_524e103d043684f089ee",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_5507f9bcffa03b43fd1c",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_5671b2e57cadc0defa91",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_56e54da516a38d5e3014",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_56e8f1330b4b2b66c314",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_59f6c7793b57a5cfb966",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_5c27f2957df58da1fc21",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_5e7535aa7198e06f56a7",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_5f6fa91b002aeb9bacf6",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_5ff65b0b3f4fbc495fb0",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "MISSING_PAYMENT",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "ESCALATED",
+    "event_id": "event_6007b88b955f436f129c",
+    "evidence": [
+      "settlement_entry_id:refund_later_015",
+      "no_unique_payment"
+    ],
+    "exception_id": "residual-settlement-entry-refund_later_015",
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 132101797,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 5202175
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 131470797,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 5833175
+    },
+    "decision": "MATCHED",
+    "event_id": "event_601da626b64836a493d2",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 631000,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 2250700,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 135053272
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 0,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 137303972
+    },
+    "decision": "MATCHED",
+    "event_id": "event_64dac08aa4dca51012c4",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 2250700,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 105484000,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 31819972
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 101096400,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 36207572
+    },
+    "decision": "MATCHED",
+    "event_id": "event_64ea92a95bbcda5806ba",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 4387600,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 101096400,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 36207572
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 94767800,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 42536172
+    },
+    "decision": "MATCHED",
+    "event_id": "event_6579c3936737819200cd",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 6328600,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_66f6259c3b6f023c2b23",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_66f65740804a23ba31f6",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_6747db70b0bfe4a2c8c0",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_67e9658215393c59f766",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_694f3c17373eebd4c7e3",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_6ef24409ce244bdbb0d8",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_6f12b934ed7cad177a89",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_703ea42c1078b8ecdb19",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_70eafce8a64347609725",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_7297b855b3fa9bcbedba",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_72dcbee5ae8f01817819",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_7316ae6d412d115886be",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "MISSING_BANK_CREDIT",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "ESCALATED",
+    "event_id": "event_743a2a7121f2d6cdadb1",
+    "evidence": [
+      "settlement_id:setl_scenario_010",
+      "expected_net_paise:1148600",
+      "no_exact_bank_evidence"
+    ],
+    "exception_id": "residual-settlement-setl_scenario_010",
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_74a3ad80276a8e789c56",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 127867264,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 9436708
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 126609763,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 10694209
+    },
+    "decision": "MATCHED",
+    "event_id": "event_764fa545fc4c274b471c",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 1257501,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_77edb76b4a7396c6451c",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_797b173ed95a82da107b",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_7a008672b6fde418b391",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_7b2b746c9401af1cd086",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_7c4a1bb26d55586b4288",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_7c4e5d236ba4870c9dbc",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_7d00323b7061704715e0",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_7e07922d271102368b16",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_7e2a7ed791b5112ad262",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_7e58b87283db215c82da",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_801c44c41124d92ec142",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_80a6c685d4fbffc0405a",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "UNRESOLVED_BANK_RESIDUAL",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 132983672,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 4320300
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 132983672,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 4320300
+    },
+    "decision": "ESCALATED",
+    "event_id": "event_820733e76fe3f699463b",
+    "evidence": [
+      "bank_transaction_id:bank_narration_008",
+      "no_supported_candidate"
+    ],
+    "exception_id": "residual-bank-bank_narration_008",
+    "financial_impact_paise": 1362900,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 123728400,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 13575572
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 122362200,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 14941772
+    },
+    "decision": "MATCHED",
+    "event_id": "event_82301f49b7a2a7a1544b",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 1366200,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_8336ac4f5b5397793ce0",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_83b1eb2f2d3299d2848a",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_85e8ab750d4160d3e121",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_87a7dcdfd597a9735008",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_8ce4ac8289ad5dd79946",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_8d1776d0ee6752783d62",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_90aa34c894c30e25713c",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_90d2e7de2cb47fd5cc2a",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_91d28976f65ef7329d27",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_924dd2077e5388329504",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_93927a9762d191676cbc",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_942ab3bf5211e37271c5",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_96bfc1b7e6e85ae9caf7",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_96d425ca2fcfc1c42c43",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "MISSING_PAYMENT",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "ESCALATED",
+    "event_id": "event_973f179a101b4bd9bbbe",
+    "evidence": [
+      "settlement_entry_id:recon_clean_012",
+      "no_unique_payment"
+    ],
+    "exception_id": "residual-settlement-entry-recon_clean_012",
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_97f793e7609bb51ea4fa",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_9bfd34441285ce0f2c8a",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_9c35b12bc527c5dc4c91",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_9c913fdc8cc59f03a28c",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_9cfd8cf5406931a6c248",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_9efdc931b3816c35b09f",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_a028e165000f74f74362",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_a06bde6d15ba682e2d2c",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_a0fa906091156a6ac69c",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 87854000,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 49449972
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 82265500,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 55038472
+    },
+    "decision": "MATCHED",
+    "event_id": "event_a208ad70956fa5da57b8",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 5588500,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_a20a20f66d088c007dff",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_a22fe7d52fd203007a63",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_a2a640c599e6d09d8877",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 128685264,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 8618708
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 127867264,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 9436708
+    },
+    "decision": "MATCHED",
+    "event_id": "event_a34bfe41de73f836dcec",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 818000,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_a3fb0a556a76cc7831a5",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_a4b48522df3ba8013fea",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_a6f00cc9bb832a29f481",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_a793b26ea77f6a069ff6",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_a8ff7d3ced79d4eb1022",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_aa237ac22378c3bf563a",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_aa9a43ddd028d12870b2",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 58093100,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 79210872
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 50933200,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 86370772
+    },
+    "decision": "MATCHED",
+    "event_id": "event_ab1f8cd4e641611ce0cb",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 7159900,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_ad8be0709bf6aa6652f7",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_aead6052369eaf8a95b4",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_aee26aacaffba3114f1c",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_af438d0b77e4dfd0c3d1",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_b469dda9fd705a395108",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_b4ce3bf2317a6ef5f620",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_b58f75db43f8b15bc3b6",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_b5efa5ca9f8820c986cc",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_b780f43457a4d1d7a8b2",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_bad814c71396b0f1bdb1",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_bce229cf9bf8162e09d0",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_bd7e5db69c59d4bdae3a",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "MISSING_BANK_CREDIT",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "ESCALATED",
+    "event_id": "event_c0066d806c3070bc83d5",
+    "evidence": [
+      "settlement_id:setl_scenario_008",
+      "expected_net_paise:1362900",
+      "no_exact_bank_evidence"
+    ],
+    "exception_id": "residual-settlement-setl_scenario_008",
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "DUPLICATE_LEDGER_ROW",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "ESCALATED",
+    "event_id": "event_c0a40c3357c101ab0aaf",
+    "evidence": [
+      "order_id:order_clean_004",
+      "identical_canonical_order_rows"
+    ],
+    "exception_id": "duplicate-order-order_clean_004",
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_c0a688c7fe48f260cd04",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 36089800,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 101214172
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 29782900,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 107521072
+    },
+    "decision": "MATCHED",
+    "event_id": "event_c0bb5417c47b0e4ba820",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 6306900,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 111736000,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 25567972
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 105484000,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 31819972
+    },
+    "decision": "MATCHED",
+    "event_id": "event_c3bf07f1b3e7303d0e0b",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 6252000,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_c3df1432898d1738f6a0",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_c516c7af82c978421a70",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_c5a037629941b445f0c1",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_c611e465f36720550d3e",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_c66d91b8b3631313a1b0",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_c6e34f814479d6b47f93",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_c7acda53d5b318ee73f6",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 121534000,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 15769972
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 118221500,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 19082472
+    },
+    "decision": "MATCHED",
+    "event_id": "event_c84e0edbb01778b04da5",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 3312500,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_c8f91084cc6e71fe96c7",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_c9a27943749a6fac4376",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_c9d9e83b905335dfe5af",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 131470797,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 5833175
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 130184098,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 7119874
+    },
+    "decision": "MATCHED",
+    "event_id": "event_cb0af61769daa10216c1",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 1286699,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_cc40d30159dbd5c92572",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_cfc0ee5c670fc18a1b20",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 124492300,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 12811672
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 123728400,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 13575572
+    },
+    "decision": "MATCHED",
+    "event_id": "event_d129043a5abe52fca302",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 763900,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 94767800,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 42536172
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 87854000,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 49449972
+    },
+    "decision": "MATCHED",
+    "event_id": "event_d15cf681916fad4d4fbc",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 6913800,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_d18500ba53927fd28347",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_d3837feaf38b50897147",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_d39ff1cc96381f4c96fe",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_d465fe579c6ec0ebb20b",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "UNRESOLVED_BANK_RESIDUAL",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 132983672,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 4320300
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 132983672,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 4320300
+    },
+    "decision": "ESCALATED",
+    "event_id": "event_d53e7ea6c5494148d5ed",
+    "evidence": [
+      "bank_transaction_id:duplicate_bank_scenario_003",
+      "fuzzy_candidate_discovered"
+    ],
+    "exception_id": "residual-bank-duplicate_bank_scenario_003",
+    "financial_impact_paise": 1313300,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_d74f5d1a99abb806a5d6",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 118221500,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 19082472
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 111736000,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 25567972
+    },
+    "decision": "MATCHED",
+    "event_id": "event_d93f054d327f4b2c2a33",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 6485500,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_dc76fab8bc6c7a81c9da",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_de439770df4ab4578468",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_df01808059001b5f756c",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "MISSING_BANK_CREDIT",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "ESCALATED",
+    "event_id": "event_df8f8a2d9fe0d3f72d43",
+    "evidence": [
+      "settlement_id:setl_scenario_003",
+      "expected_net_paise:1313300",
+      "no_exact_bank_evidence"
+    ],
+    "exception_id": "residual-settlement-setl_scenario_003",
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_e21c9771570764c1b99d",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 125925600,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 11378372
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 124492300,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 12811672
+    },
+    "decision": "MATCHED",
+    "event_id": "event_e39e89b868092097cc1c",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 1433300,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_e39efbd47368af174895",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 29782900,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 107521072
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 22271000,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 115032972
+    },
+    "decision": "MATCHED",
+    "event_id": "event_e429d6cc84010519ebeb",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 7511900,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_e4494a7b8858296718c5",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_e44b96d130ae2fa59bbf",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 129654564,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 7649408
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 129202464,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 8101508
+    },
+    "decision": "MATCHED",
+    "event_id": "event_e489ffa912eaf16c8de6",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 452100,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_e500147cfeb7cb7f72ab",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_e61df7c623332815ca5e",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_e6b73c9f195a07b00593",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_ea7431057989d9577e54",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_eaf959cdc967ab12fc9e",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_ec963914d0e4aa5e81c4",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "UNRESOLVED_BANK_RESIDUAL",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 132983672,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 4320300
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 132983672,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 4320300
+    },
+    "decision": "ESCALATED",
+    "event_id": "event_ee1ad656e0fd8fa0a86a",
+    "evidence": [
+      "bank_transaction_id:bank_scenario_003",
+      "fuzzy_candidate_discovered"
+    ],
+    "exception_id": "residual-bank-bank_scenario_003",
+    "financial_impact_paise": 1313300,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 76695600,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 60608372
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 69625300,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 67678672
+    },
+    "decision": "MATCHED",
+    "event_id": "event_ee81b7feb52b8f050a7c",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 7070300,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_eebbd050fbbd27e8bc36",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_eed84e7eb57e87becab2",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_efd37a4df65848e89c77",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_f41b101f5d1415f29369",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "MISSING_BANK_CREDIT",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "ESCALATED",
+    "event_id": "event_f60495cee3ab87dcae43",
+    "evidence": [
+      "settlement_id:setl_scenario_009",
+      "expected_net_paise:330800",
+      "no_exact_bank_evidence"
+    ],
+    "exception_id": "residual-settlement-setl_scenario_009",
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "NOT_APPLIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 18291400,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 119012572
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 13477600,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 123826372
+    },
+    "decision": "MATCHED",
+    "event_id": "event_f8ad8e9b3d62975341fd",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 4813800,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_f934ced5739710361b82",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_facb5fad3e26b5ac8f75",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_fadda62a5ac3b415d2a0",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_fc3dc96384d01fd06e53",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_fce3860790716020327c",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_SETTLEMENT_BANK_MATCH",
+    "actor": "rule_engine",
+    "after_state": {
+      "explained_bank_credit_paise": 13477600,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 123826372
+    },
+    "before_state": {
+      "explained_bank_credit_paise": 7653300,
+      "total_bank_credit_paise": 137303972,
+      "unexplained_residual_paise": 129650672
+    },
+    "decision": "MATCHED",
+    "event_id": "event_fd2e513f8f399ead63d4",
+    "evidence": [
+      "settlement_utr",
+      "credit_paise",
+      "transaction_date"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 5824300,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  },
+  {
+    "action": "EXACT_PAYMENT_MATCH",
+    "actor": "rule_engine",
+    "after_state": {},
+    "before_state": {},
+    "decision": "MATCHED",
+    "event_id": "event_fe4a48683fb356d1c7f2",
+    "evidence": [
+      "payment_id",
+      "amount_paise"
+    ],
+    "exception_id": null,
+    "financial_impact_paise": 0,
+    "run_id": "run_a23d7f8d400dcbfefbfa",
+    "timestamp": "2026-01-15T16:42:00Z",
+    "verification_status": "VERIFIED"
+  }
+]

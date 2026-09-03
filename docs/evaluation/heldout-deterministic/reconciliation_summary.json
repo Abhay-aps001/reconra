@@ -1,0 +1,38 @@
+{
+  "bank_credit": {
+    "explained_display": "1,329,836.72",
+    "explained_paise": 132983672,
+    "residual_display": "43,203.00",
+    "residual_paise": 4320300,
+    "total_display": "1,373,039.72",
+    "total_paise": 137303972
+  },
+  "completed": true,
+  "metrics": {
+    "agent_assisted": 0,
+    "ai_call_count": 0,
+    "auto_resolution_precision": null,
+    "correct_abstention_rate": null,
+    "coverage": null,
+    "deterministic_resolved": 177,
+    "elapsed_ns": 14773600,
+    "escalated": 17,
+    "estimated_inference_cost_paise": 0,
+    "explained_bank_credit_paise": 132983672,
+    "false_match_rate": null,
+    "operational_outcome_count": 229,
+    "per_break_class_accuracy": null,
+    "records_per_second": {
+      "denominator": 14773600,
+      "numerator": 184000000000
+    },
+    "resolvable_record_recall": null,
+    "resolved_records": 177,
+    "review_required": 0,
+    "scoring_available": false,
+    "total_bank_credit_paise": 137303972,
+    "total_records": 184,
+    "unexplained_residual_paise": 4320300
+  },
+  "run_id": "run_a23d7f8d400dcbfefbfa"
+}
