@@ -1,0 +1,213 @@
+record_type,source_id,candidate_id,financial_impact_paise,financial_impact_display,evidence
+payment,pay_clean_001,recon_clean_001,0,0.00,amount_paise | payment_id
+payment,pay_clean_002,recon_clean_002,0,0.00,amount_paise | payment_id
+payment,pay_clean_003,recon_clean_003,0,0.00,amount_paise | payment_id
+payment,pay_clean_004,recon_clean_004,0,0.00,amount_paise | payment_id
+payment,pay_clean_005,recon_clean_005,0,0.00,amount_paise | payment_id
+payment,pay_clean_006,recon_clean_006,0,0.00,amount_paise | payment_id
+payment,pay_clean_007,recon_clean_007,0,0.00,amount_paise | payment_id
+payment,pay_clean_008,recon_clean_008,0,0.00,amount_paise | payment_id
+payment,pay_clean_009,recon_clean_009,0,0.00,amount_paise | payment_id
+payment,pay_clean_010,recon_clean_010,0,0.00,amount_paise | payment_id
+payment,pay_clean_011,recon_clean_011,0,0.00,amount_paise | payment_id
+payment,pay_clean_013,recon_clean_013,0,0.00,amount_paise | payment_id
+payment,pay_clean_014,recon_clean_014,0,0.00,amount_paise | payment_id
+payment,pay_clean_015,recon_clean_015,0,0.00,amount_paise | payment_id
+payment,pay_clean_016,recon_clean_016,0,0.00,amount_paise | payment_id
+payment,pay_clean_017,recon_clean_017,0,0.00,amount_paise | payment_id
+payment,pay_clean_018,recon_clean_018,0,0.00,amount_paise | payment_id
+payment,pay_clean_020,recon_clean_020,0,0.00,amount_paise | payment_id
+payment,pay_clean_021,recon_clean_021,0,0.00,amount_paise | payment_id
+payment,pay_clean_022,recon_clean_022,0,0.00,amount_paise | payment_id
+payment,pay_clean_023,recon_clean_023,0,0.00,amount_paise | payment_id
+payment,pay_clean_024,recon_clean_024,0,0.00,amount_paise | payment_id
+payment,pay_clean_025,recon_clean_025,0,0.00,amount_paise | payment_id
+payment,pay_clean_026,recon_clean_026,0,0.00,amount_paise | payment_id
+payment,pay_clean_027,recon_clean_027,0,0.00,amount_paise | payment_id
+payment,pay_clean_028,recon_clean_028,0,0.00,amount_paise | payment_id
+payment,pay_clean_029,recon_clean_029,0,0.00,amount_paise | payment_id
+payment,pay_clean_030,recon_clean_030,0,0.00,amount_paise | payment_id
+payment,pay_clean_031,recon_clean_031,0,0.00,amount_paise | payment_id
+payment,pay_clean_032,recon_clean_032,0,0.00,amount_paise | payment_id
+payment,pay_clean_033,recon_clean_033,0,0.00,amount_paise | payment_id
+payment,pay_clean_034,recon_clean_034,0,0.00,amount_paise | payment_id
+payment,pay_clean_035,recon_clean_035,0,0.00,amount_paise | payment_id
+payment,pay_clean_036,recon_clean_036,0,0.00,amount_paise | payment_id
+payment,pay_clean_037,recon_clean_037,0,0.00,amount_paise | payment_id
+payment,pay_clean_038,recon_clean_038,0,0.00,amount_paise | payment_id
+payment,pay_clean_039,recon_clean_039,0,0.00,amount_paise | payment_id
+payment,pay_clean_040,recon_clean_040,0,0.00,amount_paise | payment_id
+payment,pay_clean_041,recon_clean_041,0,0.00,amount_paise | payment_id
+payment,pay_clean_042,recon_clean_042,0,0.00,amount_paise | payment_id
+payment,pay_clean_043,recon_clean_043,0,0.00,amount_paise | payment_id
+payment,pay_clean_044,recon_clean_044,0,0.00,amount_paise | payment_id
+payment,pay_clean_045,recon_clean_045,0,0.00,amount_paise | payment_id
+payment,pay_clean_046,recon_clean_046,0,0.00,amount_paise | payment_id
+payment,pay_clean_047,recon_clean_047,0,0.00,amount_paise | payment_id
+payment,pay_clean_048,recon_clean_048,0,0.00,amount_paise | payment_id
+payment,pay_clean_049,recon_clean_049,0,0.00,amount_paise | payment_id
+payment,pay_clean_050,recon_clean_050,0,0.00,amount_paise | payment_id
+payment,pay_clean_051,recon_clean_051,0,0.00,amount_paise | payment_id
+payment,pay_clean_052,recon_clean_052,0,0.00,amount_paise | payment_id
+payment,pay_clean_053,recon_clean_053,0,0.00,amount_paise | payment_id
+payment,pay_clean_054,recon_clean_054,0,0.00,amount_paise | payment_id
+payment,pay_clean_055,recon_clean_055,0,0.00,amount_paise | payment_id
+payment,pay_clean_056,recon_clean_056,0,0.00,amount_paise | payment_id
+payment,pay_clean_057,recon_clean_057,0,0.00,amount_paise | payment_id
+payment,pay_clean_058,recon_clean_058,0,0.00,amount_paise | payment_id
+payment,pay_clean_059,recon_clean_059,0,0.00,amount_paise | payment_id
+payment,pay_clean_060,recon_clean_060,0,0.00,amount_paise | payment_id
+payment,pay_clean_061,recon_clean_061,0,0.00,amount_paise | payment_id
+payment,pay_clean_062,recon_clean_062,0,0.00,amount_paise | payment_id
+payment,pay_clean_063,recon_clean_063,0,0.00,amount_paise | payment_id
+payment,pay_clean_064,recon_clean_064,0,0.00,amount_paise | payment_id
+payment,pay_clean_065,recon_clean_065,0,0.00,amount_paise | payment_id
+payment,pay_clean_066,recon_clean_066,0,0.00,amount_paise | payment_id
+payment,pay_clean_067,recon_clean_067,0,0.00,amount_paise | payment_id
+payment,pay_clean_068,recon_clean_068,0,0.00,amount_paise | payment_id
+payment,pay_clean_069,recon_clean_069,0,0.00,amount_paise | payment_id
+payment,pay_clean_070,recon_clean_070,0,0.00,amount_paise | payment_id
+payment,pay_clean_071,recon_clean_071,0,0.00,amount_paise | payment_id
+payment,pay_clean_072,recon_clean_072,0,0.00,amount_paise | payment_id
+payment,pay_clean_073,recon_clean_073,0,0.00,amount_paise | payment_id
+payment,pay_clean_074,recon_clean_074,0,0.00,amount_paise | payment_id
+payment,pay_clean_075,recon_clean_075,0,0.00,amount_paise | payment_id
+payment,pay_clean_076,recon_clean_076,0,0.00,amount_paise | payment_id
+payment,pay_clean_077,recon_clean_077,0,0.00,amount_paise | payment_id
+payment,pay_clean_078,recon_clean_078,0,0.00,amount_paise | payment_id
+payment,pay_clean_079,recon_clean_079,0,0.00,amount_paise | payment_id
+payment,pay_clean_080,recon_clean_080,0,0.00,amount_paise | payment_id
+payment,pay_clean_081,recon_clean_081,0,0.00,amount_paise | payment_id
+payment,pay_clean_082,recon_clean_082,0,0.00,amount_paise | payment_id
+payment,pay_clean_083,recon_clean_083,0,0.00,amount_paise | payment_id
+payment,pay_clean_084,recon_clean_084,0,0.00,amount_paise | payment_id
+payment,pay_clean_085,recon_clean_085,0,0.00,amount_paise | payment_id
+payment,pay_clean_086,recon_clean_086,0,0.00,amount_paise | payment_id
+payment,pay_clean_087,recon_clean_087,0,0.00,amount_paise | payment_id
+payment,pay_clean_088,recon_clean_088,0,0.00,amount_paise | payment_id
+payment,pay_clean_089,recon_clean_089,0,0.00,amount_paise | payment_id
+payment,pay_clean_090,recon_clean_090,0,0.00,amount_paise | payment_id
+payment,pay_clean_091,recon_clean_091,0,0.00,amount_paise | payment_id
+payment,pay_clean_092,recon_clean_092,0,0.00,amount_paise | payment_id
+payment,pay_clean_093,recon_clean_093,0,0.00,amount_paise | payment_id
+payment,pay_clean_094,recon_clean_094,0,0.00,amount_paise | payment_id
+payment,pay_clean_095,recon_clean_095,0,0.00,amount_paise | payment_id
+payment,pay_clean_096,recon_clean_096,0,0.00,amount_paise | payment_id
+payment,pay_clean_097,recon_clean_097,0,0.00,amount_paise | payment_id
+payment,pay_clean_098,recon_clean_098,0,0.00,amount_paise | payment_id
+payment,pay_clean_099,recon_clean_099,0,0.00,amount_paise | payment_id
+payment,pay_clean_100,recon_clean_100,0,0.00,amount_paise | payment_id
+payment,pay_clean_101,recon_clean_101,0,0.00,amount_paise | payment_id
+payment,pay_clean_102,recon_clean_102,0,0.00,amount_paise | payment_id
+payment,pay_clean_103,recon_clean_103,0,0.00,amount_paise | payment_id
+payment,pay_clean_104,recon_clean_104,0,0.00,amount_paise | payment_id
+payment,pay_clean_105,recon_clean_105,0,0.00,amount_paise | payment_id
+payment,pay_clean_106,recon_clean_106,0,0.00,amount_paise | payment_id
+payment,pay_clean_107,recon_clean_107,0,0.00,amount_paise | payment_id
+payment,pay_clean_108,recon_clean_108,0,0.00,amount_paise | payment_id
+payment,pay_clean_109,recon_clean_109,0,0.00,amount_paise | payment_id
+payment,pay_clean_110,recon_clean_110,0,0.00,amount_paise | payment_id
+payment,pay_clean_111,recon_clean_111,0,0.00,amount_paise | payment_id
+payment,pay_clean_112,recon_clean_112,0,0.00,amount_paise | payment_id
+payment,pay_clean_113,recon_clean_113,0,0.00,amount_paise | payment_id
+payment,pay_clean_114,recon_clean_114,0,0.00,amount_paise | payment_id
+payment,pay_clean_115,recon_clean_115,0,0.00,amount_paise | payment_id
+payment,pay_clean_116,recon_clean_116,0,0.00,amount_paise | payment_id
+payment,pay_clean_117,recon_clean_117,0,0.00,amount_paise | payment_id
+payment,pay_clean_118,recon_clean_118,0,0.00,amount_paise | payment_id
+payment,pay_clean_119,recon_clean_119,0,0.00,amount_paise | payment_id
+payment,pay_clean_120,recon_clean_120,0,0.00,amount_paise | payment_id
+payment,pay_clean_121,recon_clean_121,0,0.00,amount_paise | payment_id
+payment,pay_clean_122,recon_clean_122,0,0.00,amount_paise | payment_id
+payment,pay_clean_123,recon_clean_123,0,0.00,amount_paise | payment_id
+payment,pay_clean_124,recon_clean_124,0,0.00,amount_paise | payment_id
+payment,pay_clean_125,recon_clean_125,0,0.00,amount_paise | payment_id
+payment,pay_clean_126,recon_clean_126,0,0.00,amount_paise | payment_id
+payment,pay_clean_127,recon_clean_127,0,0.00,amount_paise | payment_id
+payment,pay_clean_128,recon_clean_128,0,0.00,amount_paise | payment_id
+payment,pay_clean_129,recon_clean_129,0,0.00,amount_paise | payment_id
+payment,pay_clean_130,recon_clean_130,0,0.00,amount_paise | payment_id
+payment,pay_clean_131,recon_clean_131,0,0.00,amount_paise | payment_id
+payment,pay_clean_132,recon_clean_132,0,0.00,amount_paise | payment_id
+payment,pay_clean_133,recon_clean_133,0,0.00,amount_paise | payment_id
+payment,pay_clean_134,recon_clean_134,0,0.00,amount_paise | payment_id
+payment,pay_clean_135,recon_clean_135,0,0.00,amount_paise | payment_id
+payment,pay_clean_136,recon_clean_136,0,0.00,amount_paise | payment_id
+payment,pay_clean_137,recon_clean_137,0,0.00,amount_paise | payment_id
+payment,pay_clean_138,recon_clean_138,0,0.00,amount_paise | payment_id
+payment,pay_clean_139,recon_clean_139,0,0.00,amount_paise | payment_id
+payment,pay_clean_140,recon_clean_140,0,0.00,amount_paise | payment_id
+payment,pay_clean_141,recon_clean_141,0,0.00,amount_paise | payment_id
+payment,pay_clean_142,recon_clean_142,0,0.00,amount_paise | payment_id
+payment,pay_clean_143,recon_clean_143,0,0.00,amount_paise | payment_id
+payment,pay_clean_144,recon_clean_144,0,0.00,amount_paise | payment_id
+payment,pay_clean_145,recon_clean_145,0,0.00,amount_paise | payment_id
+payment,pay_clean_146,recon_clean_146,0,0.00,amount_paise | payment_id
+payment,pay_clean_147,recon_clean_147,0,0.00,amount_paise | payment_id
+payment,pay_clean_148,recon_clean_148,0,0.00,amount_paise | payment_id
+payment,pay_clean_149,recon_clean_149,0,0.00,amount_paise | payment_id
+payment,pay_clean_150,recon_clean_150,0,0.00,amount_paise | payment_id
+payment,pay_clean_151,recon_clean_151,0,0.00,amount_paise | payment_id
+payment,pay_clean_152,recon_clean_152,0,0.00,amount_paise | payment_id
+payment,pay_clean_153,recon_clean_153,0,0.00,amount_paise | payment_id
+payment,pay_clean_154,recon_clean_154,0,0.00,amount_paise | payment_id
+payment,pay_clean_155,recon_clean_155,0,0.00,amount_paise | payment_id
+payment,pay_clean_156,recon_clean_156,0,0.00,amount_paise | payment_id
+payment,pay_clean_157,recon_clean_157,0,0.00,amount_paise | payment_id
+payment,pay_clean_158,recon_clean_158,0,0.00,amount_paise | payment_id
+payment,pay_clean_159,recon_clean_159,0,0.00,amount_paise | payment_id
+payment,pay_clean_160,recon_clean_160,0,0.00,amount_paise | payment_id
+payment,pay_clean_161,recon_clean_161,0,0.00,amount_paise | payment_id
+payment,pay_clean_162,recon_clean_162,0,0.00,amount_paise | payment_id
+payment,pay_clean_163,recon_clean_163,0,0.00,amount_paise | payment_id
+payment,pay_clean_164,recon_clean_164,0,0.00,amount_paise | payment_id
+payment,pay_clean_165,recon_clean_165,0,0.00,amount_paise | payment_id
+payment,pay_clean_166,recon_clean_166,0,0.00,amount_paise | payment_id
+payment,pay_clean_167,recon_clean_167,0,0.00,amount_paise | payment_id
+payment,pay_clean_168,recon_clean_168,0,0.00,amount_paise | payment_id
+payment,pay_clean_169,recon_clean_169,0,0.00,amount_paise | payment_id
+payment,pay_clean_170,recon_clean_170,0,0.00,amount_paise | payment_id
+payment,pay_clean_171,recon_clean_171,0,0.00,amount_paise | payment_id
+payment,pay_clean_172,recon_clean_172,0,0.00,amount_paise | payment_id
+payment,pay_clean_173,recon_clean_173,0,0.00,amount_paise | payment_id
+payment,pay_clean_174,recon_clean_174,0,0.00,amount_paise | payment_id
+payment,pay_clean_175,recon_clean_175,0,0.00,amount_paise | payment_id
+payment,pay_clean_176,recon_clean_176,0,0.00,amount_paise | payment_id
+payment,pay_clean_177,recon_clean_177,0,0.00,amount_paise | payment_id
+payment,pay_clean_178,recon_clean_178,0,0.00,amount_paise | payment_id
+payment,pay_clean_179,recon_clean_179,0,0.00,amount_paise | payment_id
+settlement_bank,setl_clean_002,bank_clean_002,2250700,"22,507.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_003,bank_clean_003,5402600,"54,026.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_004,bank_clean_004,5824300,"58,243.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_005,bank_clean_005,4813800,"48,138.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_006,bank_clean_006,3979600,"39,796.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_007,bank_clean_007,7511900,"75,119.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_008,bank_clean_008,6306900,"63,069.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_009,bank_clean_009,9283500,"92,835.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_010,bank_clean_010,5559900,"55,599.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_011,bank_clean_011,7159900,"71,599.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_012,bank_clean_012,4402900,"44,029.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_013,bank_clean_013,7129300,"71,293.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_014,bank_clean_014,7070300,"70,703.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_015,bank_clean_015,5569900,"55,699.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_016,bank_clean_016,5588500,"55,885.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_017,bank_clean_017,6913800,"69,138.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_018,bank_clean_018,6328600,"63,286.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_019,bank_clean_019,4387600,"43,876.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_020,bank_clean_020,6252000,"62,520.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_021,bank_clean_021,6485500,"64,855.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_clean_022,bank_clean_022,3312500,"33,125.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_scenario_000,bank_scenario_000,828200,"8,282.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_scenario_001,bank_scenario_001,1366200,"13,662.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_scenario_002,bank_scenario_002,763900,"7,639.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_scenario_004,bank_scenario_004,1433300,"14,333.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_scenario_005,bank_scenario_005,134763,"1,347.63",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_scenario_006,bank_scenario_006,549400,"5,494.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_scenario_007,bank_scenario_007,1257501,"12,575.01",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_scenario_011,bank_scenario_011,818000,"8,180.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_scenario_012,bank_scenario_012,517200,"5,172.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_scenario_014,bank_scenario_014,452100,"4,521.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_scenario_015,bank_scenario_015,529534,"5,295.34",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_scenario_016,bank_scenario_016,1286699,"12,866.99",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_scenario_017,bank_scenario_017,631000,"6,310.00",credit_paise | settlement_utr | transaction_date
+settlement_bank,setl_scenario_018,bank_scenario_018,881875,"8,818.75",credit_paise | settlement_utr | transaction_date

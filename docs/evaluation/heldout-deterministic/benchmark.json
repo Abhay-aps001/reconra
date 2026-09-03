@@ -1,0 +1,22 @@
+{
+  "agent_assisted": 0,
+  "dataset": "heldout",
+  "deterministic_resolved": 177,
+  "elapsed_ns": 14773600,
+  "escalated": 17,
+  "explained_bank_credit_paise": 132983672,
+  "mode": "deterministic",
+  "operational_outcome_count": 229,
+  "output_directory": "D:\\Projects\\reconra\\.worktrees\\reconciliation-engine\\docs\\evaluation\\heldout-deterministic",
+  "records_per_second": {
+    "denominator": 14773600,
+    "numerator": 184000000000
+  },
+  "resolved_records": 177,
+  "review_required": 0,
+  "scoring_available": false,
+  "scoring_unavailable_reason": "Ground truth contains scenario labels and entity IDs but no explicit expected candidate mapping; truth-derived decision metrics are unavailable.",
+  "total_bank_credit_paise": 137303972,
+  "total_records": 184,
+  "unexplained_residual_paise": 4320300
+}

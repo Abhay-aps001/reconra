@@ -29,7 +29,7 @@ Thumbs.db
 
 # Generated/private evaluation outputs
 data/generated/
-artifacts/
+/artifacts/
 playwright-report/
 test-results/
 .worktrees/
