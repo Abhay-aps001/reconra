@@ -14,9 +14,9 @@ def write_reconciled_ledger(result: ReconciliationResult, destination: Path) -> 
     """Write the actual match decisions in a deterministic, paise-preserving CSV."""
     path = destination / "reconciled_ledger.csv"
     path.parent.mkdir(parents=True, exist_ok=True)
-    rows = [
-        _ledger_row("payment", match) for match in result.payment_matches
-    ] + [_ledger_row("settlement_bank", match) for match in result.settlement_bank_matches]
+    rows = [_ledger_row("payment", match) for match in result.payment_matches] + [
+        _ledger_row("settlement_bank", match) for match in result.settlement_bank_matches
+    ]
     with path.open("w", encoding="utf-8", newline="") as output:
         writer = csv.DictWriter(
             output,

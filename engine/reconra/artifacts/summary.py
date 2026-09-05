@@ -61,11 +61,7 @@ def _summary_metrics(report: EvaluationReport) -> dict[str, Any]:
 
 
 def _is_rate(value: object) -> bool:
-    return (
-        isinstance(value, tuple)
-        and len(value) == 2
-        and all(type(item) is int for item in value)
-    )
+    return isinstance(value, tuple) and len(value) == 2 and all(type(item) is int for item in value)
 
 
 def _rate_payload(rate: tuple[int, int]) -> dict[str, int]:

@@ -9,12 +9,15 @@ from reconra.models.result import ReconciliationResult
 
 
 def write_audit_log(result: ReconciliationResult, destination: Path) -> Path:
-    """Write audit events with all evidence and before/after state, ordered by event identity."""
+    """Write audit events in deterministic financial-decision chronology."""
     path = destination / "audit_log.json"
     path.parent.mkdir(parents=True, exist_ok=True)
     rows = [
         event.model_dump(mode="json")
-        for event in sorted(result.audit_events, key=lambda item: item.event_id)
+        for event in sorted(
+            result.audit_events,
+            key=lambda item: (item.timestamp, item.lifecycle_order, item.event_id),
+        )
     ]
     path.write_text(
         dumps(rows, ensure_ascii=True, indent=2, sort_keys=True) + "\n", encoding="utf-8"

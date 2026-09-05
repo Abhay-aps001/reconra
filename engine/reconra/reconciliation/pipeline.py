@@ -53,8 +53,7 @@ class CanonicalDataset:
             for raw in _raw_records(raw_inputs, "reconciliation_rows")
         )
         bank_transactions = tuple(
-            _bank_transaction_from_raw(raw)
-            for raw in _raw_records(raw_inputs, "bank_transactions")
+            _bank_transaction_from_raw(raw) for raw in _raw_records(raw_inputs, "bank_transactions")
         )
         return cls(
             orders=orders,
@@ -81,6 +80,8 @@ class CanonicalDataset:
 def reconcile_deterministic(
     dataset: CanonicalDataset,
     policy: ReconciliationPolicy,
+    run_id: str | None = None,
+    audit_events: list[AuditEvent] | None = None,
 ) -> ReconciliationResult:
     """Run deterministic matching and surface every unmatched bank credit as a residual."""
     if not isinstance(dataset, CanonicalDataset):
@@ -90,11 +91,11 @@ def reconcile_deterministic(
 
     duplicate_order_ids = dataset.validate()
     stages = [ReconciliationStage.VALIDATED.value, ReconciliationStage.NORMALIZED.value]
-    run_id = _stable_run_id(dataset)
+    run_id = run_id or _stable_run_id(dataset)
     event_timestamp = _audit_timestamp(dataset)
     total_bank_credit_paise = sum(row.credit_paise for row in dataset.bank_transactions)
     state = ReconciliationState(total_bank_credit_paise)
-    audit_events: list[AuditEvent] = []
+    audit_events = audit_events if audit_events is not None else []
     duplicate_order_exceptions, duplicate_order_audits = _create_duplicate_order_residuals(
         duplicate_order_ids,
         run_id,
@@ -147,8 +148,10 @@ def reconcile_deterministic(
     audit_events.extend(bank_residual_audits)
     audit_events.extend(source_residual_audits)
     stages.append(ReconciliationStage.DETERMINISTIC_COMPLETE.value)
+    for lifecycle_order, event in enumerate(audit_events, start=1):
+        event.lifecycle_order = lifecycle_order
 
-    return ReconciliationResult(
+    result = ReconciliationResult(
         run_id=run_id,
         total_bank_credit_paise=state.total_bank_credit_paise,
         explained_bank_credit_paise=state.explained_bank_credit_paise,
@@ -160,6 +163,10 @@ def reconcile_deterministic(
         audit_events=audit_events,
         completed=True,
     )
+    # Pydantic validates list contents by copying. The caller owns this per-run
+    # collection and later lifecycle stages must append to the same object.
+    result.audit_events = audit_events
+    return result
 
 
 def _match_payments(
@@ -292,6 +299,22 @@ def _create_bank_residuals(
             if bank_row.bank_transaction_id in fuzzy_candidate_ids
             else "no_supported_candidate"
         )
+        if bank_row.bank_transaction_id in fuzzy_candidate_ids:
+            audit_events.append(
+                _audit_event(
+                    run_id=run_id,
+                    timestamp=timestamp,
+                    event_key=f"candidate-discovery:{exception_id}",
+                    action="CANDIDATE_DISCOVERY",
+                    decision="CANDIDATES_FOUND",
+                    financial_impact_paise=0,
+                    evidence=evidence,
+                    exception_id=exception_id,
+                    verification_status="NOT_APPLIED",
+                    before_state=_state_snapshot(state),
+                    after_state=_state_snapshot(state),
+                )
+            )
         residual_exceptions.append(
             ReconciliationException(
                 exception_id=exception_id,
@@ -347,9 +370,7 @@ def _create_source_residuals(
             )
         )
         audit_events.append(
-            _source_residual_audit(
-                run_id, timestamp, exception_id, "MISSING_SETTLEMENT", evidence
-            )
+            _source_residual_audit(run_id, timestamp, exception_id, "MISSING_SETTLEMENT", evidence)
         )
     for entry in sorted(dataset.settlement_entries, key=lambda item: item.entity_id):
         if entry.entity_id in matched_entry_ids:
@@ -488,7 +509,7 @@ def _audit_event(
     after_state: dict[str, int] | None = None,
 ) -> AuditEvent:
     return AuditEvent(
-        event_id=_stable_identifier("event", event_key),
+        event_id=_stable_identifier("event", f"{run_id}:{event_key}"),
         run_id=run_id,
         timestamp=timestamp,
         actor="rule_engine",
