@@ -72,10 +72,17 @@ def test_fuzzy_discovery_leaves_an_unmatched_bank_credit_as_an_explicit_residual
     assert missing_bank_credit.financial_impact_paise == 0
     assert "settlement_id:setl_clean_000" in missing_bank_credit.evidence
     assert "no_exact_bank_evidence" in missing_bank_credit.evidence
+    assert any(
+        event.action == "CANDIDATE_DISCOVERY"
+        and event.exception_id == bank_residual.exception_id
+        and event.decision == "CANDIDATES_FOUND"
+        for event in result.audit_events
+    )
 
 
-def test_missing_bank_evidence_creates_settlement_exceptions_without_changing_bank_tie_out(
-) -> None:
+def test_missing_bank_evidence_creates_settlement_exceptions_without_changing_bank_tie_out() -> (
+    None
+):
     """Fails if an unmatched settlement is silently dropped or treated as invented bank money."""
     raw_inputs = deepcopy(generate_clean_dataset(seed=1101).raw_inputs)
     raw_inputs["bank_transactions"] = []
@@ -93,13 +100,14 @@ def test_missing_bank_evidence_creates_settlement_exceptions_without_changing_ba
         BreakClass.MISSING_BANK_CREDIT
     }
     assert {exception.financial_impact_paise for exception in result.exceptions} == {0}
-    assert len(
-        [event for event in result.audit_events if event.action == "MISSING_BANK_CREDIT"]
-    ) == 8
+    assert (
+        len([event for event in result.audit_events if event.action == "MISSING_BANK_CREDIT"]) == 8
+    )
 
 
-def test_unmatched_payment_and_settlement_evidence_are_escalated_without_affecting_bank_money(
-) -> None:
+def test_unmatched_payment_and_settlement_evidence_are_escalated_without_affecting_bank_money() -> (
+    None
+):
     """Fails if source-evidence gaps are hidden after a bank row still ties out."""
     raw_inputs = deepcopy(generate_clean_dataset(seed=1101).raw_inputs)
     raw_inputs["reconciliation_rows"][0]["payment_id"] = "pay_missing_from_settlement"

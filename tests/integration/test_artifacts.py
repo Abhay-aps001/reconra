@@ -67,8 +67,10 @@ def test_artifact_exports_are_deterministic_and_keep_paise_as_integer_values(tmp
     ledger_lines = ledger_path.read_text(encoding="utf-8").splitlines()
     assert ledger_lines[1].startswith("payment,payment-1,settlement-1")
     assert "0.00" in ledger_lines[1]
-    assert worklist_path.read_text(encoding="utf-8").splitlines()[1].startswith(
-        "exception-1,MISSING_BANK_CREDIT,ESCALATED,3456,34.56"
+    assert (
+        worklist_path.read_text(encoding="utf-8")
+        .splitlines()[1]
+        .startswith("exception-1,MISSING_BANK_CREDIT,ESCALATED,3456,34.56")
     )
     audit_rows = loads(audit_path.read_text(encoding="utf-8"))
     assert audit_rows[0]["financial_impact_paise"] == 3456

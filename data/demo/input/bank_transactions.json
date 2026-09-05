@@ -1,0 +1,342 @@
+[
+  {
+    "bank_transaction_id": "bank_NVR_100001",
+    "credit_paise": 4474200,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100001",
+    "reference": "NVR240900100001",
+    "transaction_date": "2026-01-21",
+    "utr": "NVR240900100001",
+    "value_date": "2026-01-21"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100002",
+    "credit_paise": 4515900,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100002",
+    "reference": "NVR240900100002",
+    "transaction_date": "2026-01-22",
+    "utr": "NVR240900100002",
+    "value_date": "2026-01-22"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100003",
+    "credit_paise": 7570300,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100003",
+    "reference": "NVR240900100003",
+    "transaction_date": "2026-01-23",
+    "utr": "NVR240900100003",
+    "value_date": "2026-01-23"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100004",
+    "credit_paise": 4889300,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100004",
+    "reference": "NVR240900100004",
+    "transaction_date": "2026-01-24",
+    "utr": "NVR240900100004",
+    "value_date": "2026-01-24"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100005",
+    "credit_paise": 4550100,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100005",
+    "reference": "NVR240900100005",
+    "transaction_date": "2026-01-25",
+    "utr": "NVR240900100005",
+    "value_date": "2026-01-25"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100006",
+    "credit_paise": 4808400,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100006",
+    "reference": "NVR240900100006",
+    "transaction_date": "2026-01-26",
+    "utr": "NVR240900100006",
+    "value_date": "2026-01-26"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100007",
+    "credit_paise": 8912000,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100007",
+    "reference": "NVR240900100007",
+    "transaction_date": "2026-01-27",
+    "utr": "NVR240900100007",
+    "value_date": "2026-01-27"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100008",
+    "credit_paise": 6817200,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100008",
+    "reference": "NVR240900100008",
+    "transaction_date": "2026-01-28",
+    "utr": "NVR240900100008",
+    "value_date": "2026-01-28"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100009",
+    "credit_paise": 6536300,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100009",
+    "reference": "NVR240900100009",
+    "transaction_date": "2026-01-29",
+    "utr": "NVR240900100009",
+    "value_date": "2026-01-29"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100010",
+    "credit_paise": 6205000,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100010",
+    "reference": "NVR240900100010",
+    "transaction_date": "2026-01-30",
+    "utr": "NVR240900100010",
+    "value_date": "2026-01-30"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100011",
+    "credit_paise": 4863900,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100011",
+    "reference": "NVR240900100011",
+    "transaction_date": "2026-01-31",
+    "utr": "NVR240900100011",
+    "value_date": "2026-01-31"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100012",
+    "credit_paise": 7167100,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100012",
+    "reference": "NVR240900100012",
+    "transaction_date": "2026-02-01",
+    "utr": "NVR240900100012",
+    "value_date": "2026-02-01"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100013",
+    "credit_paise": 6069200,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100013",
+    "reference": "NVR240900100013",
+    "transaction_date": "2026-02-02",
+    "utr": "NVR240900100013",
+    "value_date": "2026-02-02"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100014",
+    "credit_paise": 6485700,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100014",
+    "reference": "NVR240900100014",
+    "transaction_date": "2026-02-03",
+    "utr": "NVR240900100014",
+    "value_date": "2026-02-03"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100015",
+    "credit_paise": 3912700,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100015",
+    "reference": "NVR240900100015",
+    "transaction_date": "2026-02-04",
+    "utr": "NVR240900100015",
+    "value_date": "2026-02-04"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100016",
+    "credit_paise": 6847400,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100016",
+    "reference": "NVR240900100016",
+    "transaction_date": "2026-02-05",
+    "utr": "NVR240900100016",
+    "value_date": "2026-02-05"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100017",
+    "credit_paise": 5695400,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100017",
+    "reference": "NVR240900100017",
+    "transaction_date": "2026-02-06",
+    "utr": "NVR240900100017",
+    "value_date": "2026-02-06"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100018",
+    "credit_paise": 6966500,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100018",
+    "reference": "NVR240900100018",
+    "transaction_date": "2026-02-07",
+    "utr": "NVR240900100018",
+    "value_date": "2026-02-07"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100019",
+    "credit_paise": 6828600,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100019",
+    "reference": "NVR240900100019",
+    "transaction_date": "2026-02-08",
+    "utr": "NVR240900100019",
+    "value_date": "2026-02-08"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100020",
+    "credit_paise": 6006300,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100020",
+    "reference": "NVR240900100020",
+    "transaction_date": "2026-02-09",
+    "utr": "NVR240900100020",
+    "value_date": "2026-02-09"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100021",
+    "credit_paise": 6627600,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100021",
+    "reference": "NVR240900100021",
+    "transaction_date": "2026-02-10",
+    "utr": "NVR240900100021",
+    "value_date": "2026-02-10"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100022",
+    "credit_paise": 8402200,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100022",
+    "reference": "NVR240900100022",
+    "transaction_date": "2026-02-11",
+    "utr": "NVR240900100022",
+    "value_date": "2026-02-11"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100023",
+    "credit_paise": 6934100,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100023",
+    "reference": "NVR240900100023",
+    "transaction_date": "2026-02-12",
+    "utr": "NVR240900100023",
+    "value_date": "2026-02-12"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100024",
+    "credit_paise": 6662200,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100024",
+    "reference": "NVR240900100024",
+    "transaction_date": "2026-02-13",
+    "utr": "NVR240900100024",
+    "value_date": "2026-02-13"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100025",
+    "credit_paise": 6054600,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100025",
+    "reference": "NVR240900100025",
+    "transaction_date": "2026-02-14",
+    "utr": "NVR240900100025",
+    "value_date": "2026-02-14"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100026",
+    "credit_paise": 6293500,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100026",
+    "reference": "NVR240900100026",
+    "transaction_date": "2026-02-15",
+    "utr": "NVR240900100026",
+    "value_date": "2026-02-15"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100027",
+    "credit_paise": 6016700,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100027",
+    "reference": "NVR240900100027",
+    "transaction_date": "2026-02-16",
+    "utr": "NVR240900100027",
+    "value_date": "2026-02-16"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100028",
+    "credit_paise": 7018700,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100028",
+    "reference": "NVR240900100028",
+    "transaction_date": "2026-02-17",
+    "utr": "NVR240900100028",
+    "value_date": "2026-02-17"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100029",
+    "credit_paise": 4826400,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100029",
+    "reference": "NVR240900100029",
+    "transaction_date": "2026-02-18",
+    "utr": "NVR240900100029",
+    "value_date": "2026-02-18"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100030",
+    "credit_paise": 2449600,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100030",
+    "reference": "NVR240900100030",
+    "transaction_date": "2026-02-19",
+    "utr": "NVR240900100030",
+    "value_date": "2026-02-19"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_900000",
+    "credit_paise": 398700,
+    "debit_paise": 0,
+    "description": "RZPY STLMNT ??",
+    "reference": "NVR240900900000",
+    "transaction_date": "2026-01-20",
+    "utr": "NVR240900900000",
+    "value_date": "2026-01-20"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_000001",
+    "credit_paise": 590000,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_000001",
+    "reference": "NVR2601A001",
+    "transaction_date": "2026-01-20",
+    "utr": "NVR2601A001",
+    "value_date": "2026-01-20"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_000002",
+    "credit_paise": 159100,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_000002",
+    "reference": "NVR2602A002",
+    "transaction_date": "2026-02-03",
+    "utr": "NVR2602A002",
+    "value_date": "2026-02-03"
+  },
+  {
+    "bank_transaction_id": "bank_NVR_100000",
+    "credit_paise": 3435300,
+    "debit_paise": 0,
+    "description": "Razorpay settlement setl_NVR_100000",
+    "reference": "NVR240900100000",
+    "transaction_date": "2026-01-20",
+    "utr": "NVR240900100000",
+    "value_date": "2026-01-20"
+  }
+]

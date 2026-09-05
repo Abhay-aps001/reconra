@@ -111,8 +111,7 @@ def test_clean_raw_sources_preserve_order_payment_settlement_and_bank_relationsh
     orders_by_id = {order["order_id"]: order for order in orders}
     payments_by_id = {payment["payment_id"]: payment for payment in payments}
     bank_by_utr = {
-        bank_transaction["utr"]: bank_transaction
-        for bank_transaction in bank_transactions
+        bank_transaction["utr"]: bank_transaction for bank_transaction in bank_transactions
     }
 
     payment_rows = [row for row in reconciliation_rows if row["type"] == "payment"]
@@ -280,9 +279,7 @@ def _truth_cases(dataset: Any) -> list[dict[str, Any]]:
     return cases
 
 
-def _truth_case_for(
-    truth_cases: list[dict[str, Any]], break_class: BreakClass
-) -> dict[str, Any]:
+def _truth_case_for(truth_cases: list[dict[str, Any]], break_class: BreakClass) -> dict[str, Any]:
     matching_cases = [case for case in truth_cases if case["break_class"] == break_class.value]
     assert matching_cases, f"missing ground-truth case for {break_class.value}"
     return matching_cases[0]
@@ -479,8 +476,7 @@ def test_added_refund_and_adjustment_scenarios_have_corresponding_bank_evidence(
     truth_cases = _truth_cases(dataset)
     reconciliation_rows_by_id = _reconciliation_rows_by_entity_id(raw_inputs)
     bank_utrs = {
-        bank_transaction["utr"]
-        for bank_transaction in _records(raw_inputs, "bank_transactions")
+        bank_transaction["utr"] for bank_transaction in _records(raw_inputs, "bank_transactions")
     }
 
     for break_class in (
@@ -513,8 +509,7 @@ def test_unresolvable_case_has_no_original_identity_or_settlement_shortcut() -> 
     order_ids = {order["order_id"] for order in _records(raw_inputs, "orders")}
     payment_ids = {payment["payment_id"] for payment in _records(raw_inputs, "payments")}
     bank_utrs = {
-        bank_transaction["utr"]
-        for bank_transaction in _records(raw_inputs, "bank_transactions")
+        bank_transaction["utr"] for bank_transaction in _records(raw_inputs, "bank_transactions")
     }
 
     assert row["order_id"] not in order_ids
@@ -564,12 +559,9 @@ def test_truth_cases_do_not_share_mutable_settlement_bank_evidence() -> None:
         settlement_utr = row["settlement_utr"]
         if not isinstance(settlement_utr, str):
             continue
-        previous_owner = settlement_owner_by_utr.setdefault(
-            settlement_utr, truth_case["case_id"]
-        )
+        previous_owner = settlement_owner_by_utr.setdefault(settlement_utr, truth_case["case_id"])
         assert previous_owner == truth_case["case_id"], (
-            f"{truth_case['case_id']} shares mutable settlement evidence with "
-            f"{previous_owner}"
+            f"{truth_case['case_id']} shares mutable settlement evidence with {previous_owner}"
         )
 
     duplicate_case = _truth_case_for(truth_cases, BreakClass.DUPLICATE_BANK_CREDIT)
@@ -619,8 +611,7 @@ def test_non_bank_break_scenarios_keep_settlement_net_equal_to_bank_evidence() -
 
         assert len(matching_bank_transactions) == 1
         expected_net_paise = sum(
-            row["credit"] - row["debit"] - row["fee"] - row["tax"]
-            for row in settlement_rows
+            row["credit"] - row["debit"] - row["fee"] - row["tax"] for row in settlement_rows
         )
         bank_transaction = matching_bank_transactions[0]
         assert bank_transaction["credit_paise"] - bank_transaction["debit_paise"] == (

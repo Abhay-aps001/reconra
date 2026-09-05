@@ -35,7 +35,14 @@ def main() -> None:
         elapsed_ns=elapsed_ns,
         records_per_second=throughput.records_per_second,
     )
-    _write_outputs(result, metrics, args.output, "import", "deterministic")
+    _write_outputs(
+        result,
+        metrics,
+        args.output,
+        "import",
+        "deterministic",
+        "NOT_APPLICABLE",
+    )
     print(args.output)
 
 
