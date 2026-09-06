@@ -1,6 +1,7 @@
 // Resolve Playwright from its owning workspace package, without a second root dependency.
 import { expect, test } from "../../apps/web/node_modules/@playwright/test";
 
+test.beforeEach(async ({page}) => { await page.route("**/api/health", route => route.fulfill({json:{status:"ok",environment:"test"}})); });
 for (const width of [1440, 768, 320]) {
   test(`entry fits ${width}px with usable actions and responsive navigation`, async ({ page }) => {
     await page.setViewportSize({ width, height: 900 });
@@ -9,7 +10,7 @@ for (const width of [1440, 768, 320]) {
     for (const name of ["Run Demo Reconciliation", "Import Data", "Sync Razorpay Test Mode"]) {
       const action = page.getByRole("button", { name, exact: true });
       await expect(action).toBeVisible();
-      await expect(action).toBeDisabled();
+      if (name === "Run Demo Reconciliation") await expect(action).toBeEnabled(); else await expect(action).toBeDisabled();
       const box = await action.boundingBox();
       expect(box).not.toBeNull();
       expect(box!.x).toBeGreaterThanOrEqual(0);
@@ -70,7 +71,7 @@ test("entry loads its local decorative currency asset without application errors
     if (request.resourceType() === "image" && new URL(request.url()).pathname !== "/icon.svg") {
       imageRequests.push(request.url());
     }
-    if (request.url().includes("/api/")) workflowRequests.push(request.url());
+    if (request.url().includes("/api/") && !request.url().endsWith("/api/health")) workflowRequests.push(request.url());
   });
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();

@@ -57,10 +57,9 @@ mobile disclosure. Below 900px the rail becomes an in-flow disclosure with a
 native button and `aria-expanded`. Below 600px entry content stacks. Document
 scrolling remains natural; artwork is bounded by its SVG viewBox and masked image layers.
 
-Home (`/`, labeled Overview) is the only active route. Future navigation and the three entry actions are
-native disabled buttons with visible availability explanations associated through
-`aria-describedby`. They do not navigate to missing routes or invoke workflows.
-Later tasks must replace those placeholders when their actual workflows exist.
+Tasks 18–20 enable the demo action and `/workspace`, `/ledger`, `/exceptions`, and
+`/audit`. Import and Razorpay sync remain disabled with availability explanations.
+The current run ID survives session navigation and reloads; no run history is stored.
 
 Currency background layers and original inline SVG are decorative and hidden from assistive technology.
 A visible caption identifies it as illustrative, with no reconciliation results.
@@ -74,7 +73,35 @@ text, and cannot rely on color alone.
 Unit tests cover exact integer currency display, entry copy/actions, shell, artwork
 asset independence, and reduced-motion CSS. Playwright covers 1440px, 768px, 320px,
 keyboard disclosure and skip navigation, computed reduced-motion behavior, and
-local currency asset loading and absence of workflow API requests. No later operational screens are implemented.
+local currency asset loading, real demo request sequencing, and operational screens.
 The target-match pass includes two inspected desktop iterations and final
 1440px, 768px, and 320px screenshots under `artifacts/task17/`. Existing test files
-and test architecture remain unchanged.
+and the test architecture are retained.
+
+## Tasks 18–20 operational contract
+
+Operational screens use plain cream surfaces, compact tables, fine borders, and
+the existing green accents. Currency artwork stays on the entry. The tie-out rail
+shows backend total, explained, and residual paise only after exact conservation
+validation. Unsupported category splits, confidence, and proposal details are
+explicitly unavailable. Ledger filters use only actual source and reference fields.
+Evidence uses a keyboard-accessible drawer; audit events retain backend lifecycle
+order in pages of 20. Tables scroll locally at narrow widths.
+
+Set `NEXT_PUBLIC_API_BASE_URL` to the backend origin (without `/api`) before
+starting development or building, for example `http://127.0.0.1:8100` locally.
+Next.js rewrites same-origin `/api/*` requests to that origin, avoiding a separate
+browser CORS requirement. Deployments must set this value at build time. No
+credentials belong in this public setting. Without an available backend, the UI
+shows a safe preparation/error state. Demo completion is driven by the response;
+no timer simulates progress. Approve/reject waits for server confirmation and then
+refreshes the run; conflicts require a successful refresh before retrying.
+
+Production surfaces consume the public run response and `reconciled_ledger.csv`.
+Synthetic response fixtures exist only in tests. Tests cover malformed responses,
+conservation, decisions, stale conflicts, navigation, evidence, and narrow screens.
+
+For an opt-in connected smoke, start the credential-free local API and a frontend
+built with its origin, then set `FRONTEND_SMOKE_URL` to the local frontend origin
+and run `pnpm --dir apps/web exec node scripts/connected-smoke.mjs`. This creates
+a real demo run and checks all four operational routes at 1440, 768, and 320px.
