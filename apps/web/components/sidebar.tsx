@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import {usePathname} from "next/navigation";
+import {useRun} from "../features/reconciliation/run-controller";
 
 const navigation = [
   { label: "Workspace", path: "M3 3h6v6H3zM13 3h6v6h-6zM3 13h6v6H3zM13 13h6v6h-6z" },
@@ -14,6 +16,7 @@ const navigation = [
 
 export function Sidebar() {
   const [open, setOpen] = useState(false);
+  const pathname=usePathname(); const {href}=useRun();
 
   return (
     <aside className="sidebar" data-open={open}>
@@ -30,15 +33,15 @@ export function Sidebar() {
       </div>
       <nav id="primary-navigation" aria-label="Primary">
         <ul className="nav-list">
-          <li><Link href="/" className="nav-item" aria-current="page">
+          <li><Link href="/" className="nav-item" aria-current={pathname === "/" ? "page" : undefined}>
             <svg className="nav-symbol" viewBox="0 0 22 22" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true"><path d="m3 10 8-7 8 7M5 9v10h12V9M9 19v-6h4v6" /></svg>
             Overview
           </Link></li>
-          {navigation.slice(0, 4).map(item => <li key={item.label}>
-            <button type="button" className="nav-item" disabled aria-describedby="navigation-availability">
+          {navigation.slice(0, 4).map((item,index) => <li key={item.label}>
+            <Link href={href(["/workspace","/ledger","/exceptions","/audit"][index])} className="nav-item" aria-current={pathname === ["/workspace","/ledger","/exceptions","/audit"][index] ? "page" : undefined} onClick={() => setOpen(false)}>
               <svg className="nav-symbol" viewBox="0 0 22 22" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" aria-hidden="true"><path d={item.path} /></svg>
               {item.label}
-            </button>
+            </Link>
           </li>)}
         </ul>
         <hr className="nav-divider" />
@@ -50,10 +53,10 @@ export function Sidebar() {
             </button>
           </li>)}
         </ul>
-        <p className="nav-note" id="navigation-availability">Planned sections are not available yet.</p>
+        <p className="nav-note" id="navigation-availability">Import and Razorpay sync are not available yet.</p>
       </nav>
       <div className="sidebar-footer">
-        <div className="sidebar-mode"><span className="mode-dot" aria-hidden="true" /><div><strong>Test Mode only</strong><span>Entry preview</span></div></div>
+        <div className="sidebar-mode"><span className="mode-dot" aria-hidden="true" /><div><strong>Test Mode only</strong><span>Reconciliation control</span></div></div>
         <div className="workspace-identity"><span className="workspace-avatar" aria-hidden="true">N</span><div><strong>Nivara demo</strong><span>Synthetic merchant</span></div></div>
       </div>
     </aside>

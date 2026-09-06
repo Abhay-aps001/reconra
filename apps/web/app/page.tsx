@@ -1,3 +1,5 @@
+"use client";
+import {useRun, EngineNotice} from "../features/reconciliation/run-controller";
 import { RupeeFlow } from "../components/rupee-flow";
 
 function Arrow() {
@@ -9,6 +11,7 @@ function Symbol({ path }: { path: string }) {
 }
 
 export default function Home() {
+  const {startDemo,busy} = useRun();
   return (
     <>
       <div className="entry-print-field" aria-hidden="true" />
@@ -23,9 +26,10 @@ export default function Home() {
         <RupeeFlow />
       </section>
 
+      <EngineNotice />
       <section className="entry-actions" aria-label="Start with a source">
         <div className="action-grid">
-          <button type="button" className="action-card action-card-primary" disabled aria-label="Run Demo Reconciliation" aria-describedby="entry-availability">
+          <button type="button" className="action-card action-card-primary" onClick={() => void startDemo()} disabled={busy} aria-label="Run Demo Reconciliation" aria-describedby="entry-availability">
             <svg className="card-engraving" viewBox="0 0 300 140" aria-hidden="true">{Array.from({ length: 20 }, (_, i) => <path key={i} d={`M90 ${155 + i * 3}C130 ${25 + i * 3} 225 ${70 + i * 3} 320 ${-30 + i * 3}`} />)}</svg><span className="action-icon"><Symbol path="m9 6 10 6-10 6V6Z" /></span>
             <span className="action-title">Run Demo Reconciliation</span>
             <span className="action-detail">See how Reconra works</span>
@@ -45,7 +49,7 @@ export default function Home() {
           </button>
           <blockquote className="statement-panel"><span aria-hidden="true">“</span><p>Greater financial clarity begins with an explainable trail.</p><hr /></blockquote>
         </div>
-        <p className="availability-note" id="entry-availability"><strong>Entry preview</strong><span>Workflows are not available yet. No data has been processed.</span></p>
+        <p className="availability-note" id="entry-availability"><strong>Demo ready</strong><span>Import and Razorpay sync are not available yet.</span></p>
       </section>
 
       <section className="capability-strip" aria-label="Reconciliation principles">
