@@ -5,7 +5,7 @@ import { EvidenceDrawer } from "../../components/evidence-drawer";
 import { ResolutionActions } from "./resolution-actions";
 import { formatINRFromPaise } from "../../lib/format/currency";
 export function ExceptionList() {
-  const { run } = useRun();
+  const { run, savedOnly } = useRun();
   const [selected, setSelected] = useState<string | null>(null),
     [status, setStatus] = useState("active");
   if (!run) return null;
@@ -140,11 +140,11 @@ export function ExceptionList() {
             Exception impact reported by the engine. Current tie-out changes
             only after the backend confirms a decision.
           </p>
-          {item.resolution_status === "REVIEW_REQUIRED" ? (
+          {item.resolution_status === "REVIEW_REQUIRED" && !savedOnly ? (
             <ResolutionActions key={item.exception_id} id={item.exception_id} />
           ) : (
             <p role="status">
-              {item.resolution_status === "AUTO_RESOLVED" ||
+              {savedOnly ? "Saved snapshots cannot change a reconciliation decision." : item.resolution_status === "AUTO_RESOLVED" ||
               item.resolution_status === "REJECTED"
                 ? "Decision recorded."
                 : ""}

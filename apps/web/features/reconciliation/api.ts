@@ -1,4 +1,4 @@
-import { request } from "../../lib/api/client";
+import { request, requestBlob } from "../../lib/api/client";
 import { ApiError } from "../../lib/api/errors";
 import { object, parseRun } from "./types";
 async function runRequest(path: string, method = "GET", expectedId?: string) {
@@ -40,4 +40,6 @@ export const api = {
       "GET",
       name.endsWith(".csv"),
     ),
+  artifactBlob: (id: string, name: "reconciled_ledger.csv" | "audit_log.json" | "exception_worklist.csv" | "reconciliation_summary.json") =>
+    requestBlob(`/runs/${encodeURIComponent(id)}/artifacts/${name}`),
 };

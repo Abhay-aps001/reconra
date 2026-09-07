@@ -1,6 +1,7 @@
 "use client";
 import {useRun, EngineNotice} from "../features/reconciliation/run-controller";
 import { RupeeFlow } from "../components/rupee-flow";
+import Link from "next/link";
 
 function Arrow() {
   return <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M3 10h13m-5-5 5 5-5 5" /></svg>;
@@ -35,21 +36,21 @@ export default function Home() {
             <span className="action-detail">See how Reconra works</span>
             <span className="action-arrow"><Arrow /></span>
           </button>
-          <button type="button" className="action-card" disabled aria-label="Import Data" aria-describedby="entry-availability">
+          <Link className="action-card" href="/import" aria-label="Import Data">
             <svg className="card-engraving" viewBox="0 0 300 140" aria-hidden="true">{Array.from({ length: 20 }, (_, i) => <path key={i} d={`M90 ${155 + i * 3}C130 ${25 + i * 3} 225 ${70 + i * 3} 320 ${-30 + i * 3}`} />)}</svg><span className="action-icon"><Symbol path="M4 14v6h16v-6M12 3v12M7 8l5-5 5 5" /></span>
             <span className="action-title">Import Data</span>
             <span className="action-detail">Upload your settlement files</span>
             <span className="action-arrow"><Arrow /></span>
-          </button>
-          <button type="button" className="action-card" disabled aria-label="Sync Razorpay Test Mode" aria-describedby="entry-availability">
+          </Link>
+          <Link className="action-card" href="/razorpay" aria-label="Sync Razorpay Test Mode">
             <svg className="card-engraving" viewBox="0 0 300 140" aria-hidden="true">{Array.from({ length: 20 }, (_, i) => <path key={i} d={`M90 ${155 + i * 3}C130 ${25 + i * 3} 225 ${70 + i * 3} 320 ${-30 + i * 3}`} />)}</svg><span className="action-icon"><Symbol path="m10 14 4-4M8 16l-1 1a4 4 0 0 1-6-6l5-5a4 4 0 0 1 6 0M16 8l1-1a4 4 0 0 1 6 6l-5 5a4 4 0 0 1-6 0" /></span>
             <span className="action-title">Sync Razorpay Test Mode</span>
             <span className="action-detail">Connect and fetch Test Mode data</span>
             <span className="action-arrow"><Arrow /></span>
-          </button>
+          </Link>
           <blockquote className="statement-panel"><span aria-hidden="true">“</span><p>Greater financial clarity begins with an explainable trail.</p><hr /></blockquote>
         </div>
-        <p className="availability-note" id="entry-availability"><strong>Demo ready</strong><span>Import and Razorpay sync are not available yet.</span></p>
+        <p className="availability-note" id="entry-availability"><strong>Demo, import, and Test Mode sync</strong><span>Every source enters the same verified run lifecycle.</span></p>
       </section>
 
       <section className="capability-strip" aria-label="Reconciliation principles">

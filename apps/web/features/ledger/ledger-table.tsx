@@ -14,7 +14,7 @@ import { safeError, ApiError } from "../../lib/api/errors";
 import { formatINRFromPaise } from "../../lib/format/currency";
 import { EvidenceDrawer } from "../../components/evidence-drawer";
 export function LedgerTable() {
-  const { run } = useRun();
+  const { run, savedOnly } = useRun();
   const [rows, setRows] = useState<LedgerRow[]>([]),
     [loading, setLoading] = useState(true),
     [error, setError] = useState<string | null>(null),
@@ -24,7 +24,7 @@ export function LedgerTable() {
     [attempt, setAttempt] = useState(0);
   useEffect(() => {
     let active = true;
-    if (!run) return;
+    if (!run || savedOnly) { setLoading(false); return; }
     setLoading(true);
     setRows([]);
     setError(null);
@@ -53,7 +53,7 @@ export function LedgerTable() {
     return () => {
       active = false;
     };
-  }, [run, attempt]);
+  }, [run, attempt, savedOnly]);
   const columns = useMemo<ColumnDef<LedgerRow>[]>(
     () => [
       { accessorKey: "record_type", header: "Source type" },
@@ -112,6 +112,7 @@ export function LedgerTable() {
   });
   return (
     <section className="data-panel">
+      {savedOnly ? <p className="empty-state">This saved run snapshot has no live ledger artifact. Open a live backend run to inspect it.</p> : <>
       <div className="table-controls">
         <label>
           Source type
@@ -229,6 +230,7 @@ export function LedgerTable() {
           </p>
         </EvidenceDrawer>
       )}
+      </>}
     </section>
   );
 }

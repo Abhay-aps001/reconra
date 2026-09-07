@@ -8,9 +8,9 @@ for (const width of [1440, 768, 320]) {
     await page.goto("/");
     await expect(page.getByRole("heading", { name: "Every rupee should have a trail." })).toBeVisible();
     for (const name of ["Run Demo Reconciliation", "Import Data", "Sync Razorpay Test Mode"]) {
-      const action = page.getByRole("button", { name, exact: true });
+      const action = name === "Run Demo Reconciliation" ? page.getByRole("button", { name, exact: true }) : page.getByRole("link", { name, exact: true });
       await expect(action).toBeVisible();
-      if (name === "Run Demo Reconciliation") await expect(action).toBeEnabled(); else await expect(action).toBeDisabled();
+      await expect(action).toBeEnabled();
       const box = await action.boundingBox();
       expect(box).not.toBeNull();
       expect(box!.x).toBeGreaterThanOrEqual(0);

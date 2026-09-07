@@ -10,6 +10,7 @@ const navigation = [
   { label: "Ledger", path: "M4 3h14v16H4zM8 3v16M8 8h10M8 13h10" },
   { label: "Exceptions", path: "m11 3 9 16H2L11 3ZM11 8v5M11 15v1" },
   { label: "Audit Trail", path: "m11 2 7 3v5c0 5-7 9-7 9s-7-4-7-9V5l7-3ZM7 10l3 3 5-6" },
+  { label: "Runs", path: "M4 4h14v15H4zM7 8h8M7 12h8M7 16h5" },
   { label: "Imports", path: "M3 13v6h16v-6M11 3v11M7 10l4 4 4-4" },
   { label: "Razorpay", path: "M7 3h11l-5 6h4L5 20l4-9H5l2-8Z" },
 ];
@@ -37,8 +38,8 @@ export function Sidebar() {
             <svg className="nav-symbol" viewBox="0 0 22 22" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true"><path d="m3 10 8-7 8 7M5 9v10h12V9M9 19v-6h4v6" /></svg>
             Overview
           </Link></li>
-          {navigation.slice(0, 4).map((item,index) => <li key={item.label}>
-            <Link href={href(["/workspace","/ledger","/exceptions","/audit"][index])} className="nav-item" aria-current={pathname === ["/workspace","/ledger","/exceptions","/audit"][index] ? "page" : undefined} onClick={() => setOpen(false)}>
+          {navigation.slice(0, 5).map((item,index) => <li key={item.label}>
+            <Link href={href(["/workspace","/ledger","/exceptions","/audit","/runs"][index])} className="nav-item" aria-current={pathname === ["/workspace","/ledger","/exceptions","/audit","/runs"][index] ? "page" : undefined} onClick={() => setOpen(false)}>
               <svg className="nav-symbol" viewBox="0 0 22 22" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" aria-hidden="true"><path d={item.path} /></svg>
               {item.label}
             </Link>
@@ -46,14 +47,14 @@ export function Sidebar() {
         </ul>
         <hr className="nav-divider" />
         <ul className="nav-list">
-          {navigation.slice(4).map(item => <li key={item.label}>
-            <button type="button" className="nav-item" disabled aria-describedby="navigation-availability">
+          {navigation.slice(5).map(item => <li key={item.label}>
+            <Link href={item.label === "Imports" ? "/import" : "/razorpay"} className="nav-item" aria-current={pathname === (item.label === "Imports" ? "/import" : "/razorpay") ? "page" : undefined}>
               <svg className="nav-symbol" viewBox="0 0 22 22" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" aria-hidden="true"><path d={item.path} /></svg>
               {item.label}
-            </button>
+            </Link>
           </li>)}
         </ul>
-        <p className="nav-note" id="navigation-availability">Import and Razorpay sync are not available yet.</p>
+        <Link className="nav-note" href="/methodology">Methodology and safety limits</Link>
       </nav>
       <div className="sidebar-footer">
         <div className="sidebar-mode"><span className="mode-dot" aria-hidden="true" /><div><strong>Test Mode only</strong><span>Reconciliation control</span></div></div>
