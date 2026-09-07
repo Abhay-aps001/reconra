@@ -10,7 +10,7 @@ export function RunScreen({
   description: string;
   children: ReactNode;
 }) {
-  const { run, phase, error, startDemo, refresh, busy } = useRun();
+  const { run, phase, error, startDemo, refresh, busy, savedOnly } = useRun();
   return (
     <section className="operational">
       <header className="screen-heading">
@@ -22,7 +22,7 @@ export function RunScreen({
         <button
           className="control-button"
           onClick={() => void (run ? refresh() : startDemo())}
-          disabled={busy}
+          disabled={busy || savedOnly}
         >
           {run ? "Refresh run" : "Run Demo Reconciliation"}
         </button>
@@ -45,6 +45,7 @@ export function RunScreen({
           <p className="run-reference">
             {run.run_id} <span className="status-chip">{run.status}</span>
           </p>
+          {savedOnly && <p className="snapshot-label" role="status">SAVED RUN SNAPSHOT · Live actions and exports are unavailable.</p>}
           {children}
         </>
       ) : !error ? (

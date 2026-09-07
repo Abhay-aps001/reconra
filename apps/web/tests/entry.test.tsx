@@ -8,7 +8,7 @@ import Home from "../app/page";
 import { AppShell } from "../components/app-shell";
 import { RupeeFlow } from "../components/rupee-flow";
 
-const markup = () => renderToStaticMarkup(<RunContext.Provider value={{run:null,phase:"idle",error:null,health:"ready",busy:false,startDemo:async()=>{},refresh:async()=>true,decide:async()=>{},href:path=>path}}><AppShell><Home /></AppShell></RunContext.Provider>);
+const markup = () => renderToStaticMarkup(<RunContext.Provider value={{run:null,phase:"idle",error:null,health:"ready",busy:false,startDemo:async()=>{},refresh:async()=>true,decide:async()=>{},acceptRun:()=>{},openSavedSnapshot:()=>{},savedOnly:false,href:path=>path}}><AppShell><Home /></AppShell></RunContext.Provider>);
 
 test("entry identifies Reconra and its money-trail purpose", () => {
   const html = markup();
@@ -16,13 +16,11 @@ test("entry identifies Reconra and its money-trail purpose", () => {
   assert.match(html, /<h1[^>]*>Every rupee should have a trail\.<\/h1>/);
 });
 
-for (const label of ["Import Data", "Sync Razorpay Test Mode"]) {
-  test(`entry exposes the ${label} placeholder with an unavailable explanation`, () => {
-    const html = markup();
-    assert.match(html, new RegExp(`<button[^>]*disabled=""[^>]*>[^]*?${label}[^]*?<\\/button>`));
-    assert.match(html, /Import and Razorpay sync are not available yet/);
-  });
-}
+test("entry routes Import Data and Test Mode sync to their working workflows", () => {
+  const html = markup();
+  assert.match(html, /aria-label="Import Data"[^>]*href="\/import"/);
+  assert.match(html, /aria-label="Sync Razorpay Test Mode"[^>]*href="\/razorpay"/);
+});
 
 test("shell has a main landmark, primary navigation, active home and skip link", () => {
   const html = markup();

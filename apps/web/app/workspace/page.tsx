@@ -4,6 +4,7 @@ import { RunScreen } from "../../features/reconciliation/run-screen";
 import { Progress } from "../../features/reconciliation/progress";
 import { TieOutRail } from "../../components/tie-out/tie-out-rail";
 import { RunOverview } from "../../features/reconciliation/run-overview";
+import { ExportMenu } from "../../features/reconciliation/export-menu";
 export default function Workspace() {
   const { run, phase } = useRun();
   return (
@@ -20,6 +21,7 @@ export default function Workspace() {
           <>
             <TieOutRail value={run.tie_out_summary} />
             <RunOverview run={run} />
+            <ExportMenu />
             <Progress run={run} />
           </>
         )}

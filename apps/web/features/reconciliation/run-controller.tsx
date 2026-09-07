@@ -13,6 +13,7 @@ import { api } from "./api";
 import { Progress } from "./progress";
 import type { RunResult } from "./types";
 import { safeError } from "../../lib/api/errors";
+import { saveRunSnapshot, sanitizeRunSnapshot } from "../../lib/storage/runs";
 type Phase = "idle" | "preparing" | "processing" | "loading";
 interface Context {
   run: RunResult | null;
@@ -23,6 +24,9 @@ interface Context {
   startDemo: () => Promise<void>;
   refresh: () => Promise<boolean>;
   decide: (id: string, action: "approve" | "reject") => Promise<void>;
+  acceptRun: (run: RunResult) => void;
+  openSavedSnapshot: (run: RunResult) => void;
+  savedOnly: boolean;
   href: (path: string) => string;
 }
 export const RunContext = createContext<Context | null>(null);
@@ -34,7 +38,8 @@ export function RunProvider({ children }: { children: ReactNode }) {
     [phase, setPhase] = useState<Phase>("idle"),
     [error, setError] = useState<string | null>(null),
     [health, setHealth] = useState<Context["health"]>("preparing"),
-    [busy, setBusy] = useState(false);
+    [busy, setBusy] = useState(false),
+    [savedOnly, setSavedOnly] = useState(false);
   const current = useRef<RunResult | null>(null),
     locked = useRef(false),
     generation = useRef(0),
@@ -42,11 +47,18 @@ export function RunProvider({ children }: { children: ReactNode }) {
   const accept = useCallback((next: RunResult) => {
     current.current = next;
     setRun(next);
+    setSavedOnly(false);
     try {
       sessionStorage.setItem("reconra.current-run", next.run_id);
     } catch {
       /* Navigation context still works without storage. */
     }
+    void saveRunSnapshot(sanitizeRunSnapshot(next));
+  }, []);
+  const openSavedSnapshot = useCallback((next: RunResult) => {
+    current.current = next;
+    setRun(next);
+    setSavedOnly(true);
   }, []);
   const warm = useCallback(async () => {
     setHealth("preparing");
@@ -74,6 +86,7 @@ export function RunProvider({ children }: { children: ReactNode }) {
     setPhase("loading");
     setError(null);
     setRun(null);
+    setSavedOnly(false);
     current.current = null;
     void api
       .run(id)
@@ -95,6 +108,7 @@ export function RunProvider({ children }: { children: ReactNode }) {
     setError(null);
     setPhase("preparing");
     setRun(null);
+    setSavedOnly(false);
     current.current = null;
     try {
       sessionStorage.removeItem("reconra.current-run");
@@ -165,6 +179,9 @@ export function RunProvider({ children }: { children: ReactNode }) {
         startDemo,
         refresh,
         decide,
+        acceptRun: accept,
+        openSavedSnapshot,
+        savedOnly,
         href,
       }}
     >
