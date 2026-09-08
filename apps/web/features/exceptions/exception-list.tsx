@@ -53,10 +53,10 @@ export function ExceptionList() {
           <table>
             <thead>
               <tr>
-                <th>Exception</th>
-                <th>Break class</th>
-                <th>Amount impact</th>
-                <th>Status</th>
+                <th scope="col">Exception</th>
+                <th scope="col">Break class</th>
+                <th scope="col">Amount impact</th>
+                <th scope="col">Status</th>
               </tr>
             </thead>
             <tbody>

@@ -1,3 +1,4 @@
+import path from "node:path";
 import type { NextConfig } from 'next';
 
 export function resolveBackendBaseUrl(
@@ -9,6 +10,7 @@ export function resolveBackendBaseUrl(
 }
 
 const nextConfig: NextConfig = {
+  outputFileTracingRoot: path.join(__dirname, "../.."),
   async rewrites() {
     const backend = resolveBackendBaseUrl();
     return backend
