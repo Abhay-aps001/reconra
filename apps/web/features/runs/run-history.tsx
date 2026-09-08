@@ -29,7 +29,7 @@ export function RunHistory() {
   if (!runs.length) return <div className="empty-state"><h2>No saved runs</h2><p>No reconciliation runs saved yet.</p></div>;
   return <section className="data-panel"><header><h2>Recent reconciliation runs</h2><p>Stored in this browser only</p></header>
     {error && <p role="alert" className="notice-error">{error}</p>}
-    <div className="table-scroll"><table><thead><tr><th>Run</th><th>Saved</th><th>Status</th><th>Bank credit</th><th>Explained</th><th>Residual</th><th>Exceptions</th><th>Actions</th></tr></thead><tbody>
+    <div className="table-scroll" tabIndex={0} role="region" aria-label="Saved reconciliation runs"><table><thead><tr><th scope="col">Run</th><th scope="col">Saved</th><th scope="col">Status</th><th scope="col">Bank credit</th><th scope="col">Explained</th><th scope="col">Residual</th><th scope="col">Exceptions</th><th scope="col">Actions</th></tr></thead><tbody>
       {runs.map((run) => <tr key={run.run_id}><td className="run-reference">{run.run_id}</td><td>{new Date(run.saved_at).toLocaleString()}</td><td>{run.status}</td><td className="money">{formatINRFromPaise(run.total_bank_credit_paise)}</td><td className="money">{formatINRFromPaise(run.explained_bank_credit_paise)}</td><td className="money">{formatINRFromPaise(run.unexplained_residual_paise)}</td><td>{run.exception_count}</td><td><button className="text-button" disabled={busy === run.run_id} onClick={() => void open(run.run_id)}>Open</button> <button className="text-button" disabled={busy === run.run_id} onClick={() => void remove(run.run_id)}>Delete</button></td></tr>)}
     </tbody></table></div>
   </section>;

@@ -1,16 +1,26 @@
 import { ApiError, responseError } from "./errors";
 // NEXT_PUBLIC_API_BASE_URL is consumed by next.config.ts. Same-origin rewrites
 // avoid requiring cross-origin access from the backend and work in production.
+function errorCode(body: unknown): string {
+  const value = body as { code?: unknown; detail?: { code?: unknown } };
+  return typeof value?.code === "string"
+    ? value.code
+    : typeof value?.detail?.code === "string"
+      ? value.detail.code
+      : "API_UNAVAILABLE";
+}
+
+function timeoutFor(path: string): number {
+  return path === "/health" ? 15000 : 90000;
+}
+
 export async function request(
   path: string,
   method = "GET",
   text = false,
 ): Promise<unknown> {
   const controller = new AbortController();
-  const timeout = setTimeout(
-    () => controller.abort(),
-    path === "/health" ? 15000 : 90000,
-  );
+  const timeout = setTimeout(() => controller.abort(), timeoutFor(path));
   try {
     const response = await fetch(`/api${path}`, {
       method,
@@ -20,14 +30,7 @@ export async function request(
     });
     if (!response.ok) {
       const body = await response.json().catch(() => ({}));
-      throw responseError(
-        response.status,
-        typeof body?.code === "string"
-          ? body.code
-          : typeof body?.detail?.code === "string"
-            ? body.detail.code
-            : "API_UNAVAILABLE",
-      );
+      throw responseError(response.status, errorCode(body));
     }
     if (text) return await response.text();
     try {
@@ -50,16 +53,24 @@ export async function request(
 }
 
 async function checkedFetch(path: string, init: RequestInit): Promise<Response> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), timeoutFor(path));
   try {
-    const response = await fetch(`/api${path}`, { ...init, cache: "no-store" });
+    const response = await fetch(`/api${path}`, {
+      ...init,
+      cache: "no-store",
+      signal: controller.signal,
+    });
     if (!response.ok) {
       const body = await response.json().catch(() => ({}));
-      throw responseError(response.status, typeof body?.code === "string" ? body.code : "API_UNAVAILABLE");
+      throw responseError(response.status, errorCode(body));
     }
     return response;
   } catch (error) {
     if (error instanceof ApiError) throw error;
     throw new ApiError("API_UNAVAILABLE", "Reconciliation engine is unavailable. Please retry shortly.");
+  } finally {
+    clearTimeout(timeout);
   }
 }
 
