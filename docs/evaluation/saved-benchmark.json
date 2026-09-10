@@ -1,0 +1,20 @@
+{
+  "agent_assisted": 0,
+  "agent_provider_status": "NOT_APPLICABLE",
+  "artifact_type": "SAVED_BENCHMARK_RESULT",
+  "dataset": "heldout",
+  "deterministic_resolved": 177,
+  "escalated": 17,
+  "explained_bank_credit_paise": 132983672,
+  "mode": "deterministic",
+  "note": "Saved benchmark evidence from a deliberate local evaluation run. It is not a live benchmark and contains no truth-derived score.",
+  "operational_outcome_count": 229,
+  "resolved_records": 177,
+  "review_required": 0,
+  "schema_version": 1,
+  "scoring_available": false,
+  "scoring_unavailable_reason": "Ground truth contains scenario labels and entity IDs but no explicit expected candidate mapping; truth-derived decision metrics are unavailable.",
+  "total_bank_credit_paise": 137303972,
+  "total_records": 184,
+  "unexplained_residual_paise": 4320300
+}
