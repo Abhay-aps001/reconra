@@ -90,6 +90,27 @@ def test_artifact_exports_are_deterministic_and_keep_paise_as_integer_values(tmp
         assert summary["metrics"][field_name] is None
 
 
+def test_csv_exports_escape_untrusted_formula_like_text_cells(tmp_path) -> None:
+    result = _result()
+    result.payment_matches = [
+        DeterministicMatch(
+            source_id="=untrusted()",
+            candidate_id="+untrusted()",
+            evidence=["@untrusted"],
+        )
+    ]
+    result.exceptions[0].evidence = ["-untrusted"]
+
+    ledger = write_reconciled_ledger(result, tmp_path).read_text(encoding="utf-8")
+    worklist = write_exception_worklist(result, tmp_path).read_text(encoding="utf-8")
+
+    assert "'=untrusted()" in ledger
+    assert "'+untrusted()" in ledger
+    assert "'@untrusted" in ledger
+    assert "'-untrusted" in worklist
+    assert ",0," in ledger
+
+
 def test_unscored_result_metrics_and_summary_retain_operational_activity(tmp_path) -> None:
     """Unscored runs must retain result-derived counters while truth rates remain unavailable."""
     result = ReconciliationResult(

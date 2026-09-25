@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from dataclasses import replace
 from pathlib import PurePath
 from typing import cast
 from uuid import uuid4
@@ -43,7 +44,7 @@ class ImportServiceError(Exception):
 async def inspect_import(files: list[UploadFile]) -> dict[str, object]:
     total = 0
     tables: list[ParsedTable] = []
-    for file in files:
+    for index, file in enumerate(files, start=1):
         filename = file.filename or ""
         _safe_filename(filename)
         content = await file.read()
@@ -52,7 +53,7 @@ async def inspect_import(files: list[UploadFile]) -> dict[str, object]:
             raise ImportServiceError("FILE_TOO_LARGE")
         if total > _COMBINED_LIMIT:
             raise ImportServiceError("COMBINED_SIZE_TOO_LARGE")
-        tables.append(_parse(filename, content))
+        tables.append(replace(_parse(filename, content), file_id=f"file_{index}"))
     if sum(len(table.rows) for table in tables) > _ROW_LIMIT:
         raise ImportServiceError("ROW_LIMIT_EXCEEDED")
     import_id = f"import_{uuid4().hex[:20]}"
@@ -65,7 +66,7 @@ def validate_import(import_id: str, mappings: dict[str, dict[str, str]]) -> dict
     stored = _stored(import_id)
     tables = _tables(stored)
     for table in tables:
-        mapping = mappings.get(table.filename)
+        mapping = mappings.get(table.file_id)
         if mapping is None:
             raise ImportServiceError("MAPPING_REQUIRED")
         if set(mapping) - set(table.columns) or len(set(mapping.values())) != len(mapping):
@@ -75,7 +76,7 @@ def validate_import(import_id: str, mappings: dict[str, dict[str, str]]) -> dict
         if not required <= set(mapping.values()):
             raise ImportServiceError("REQUIRED_FIELD_MISSING")
         for row in table.rows:
-            _canonical_row(import_id, table.filename, role, row, mapping, len(table.rows))
+            _canonical_row(import_id, table.file_id, role, row, mapping, len(table.rows))
     stored["mappings"] = mappings
     return {"import_id": import_id, "validated": True}
 
@@ -94,9 +95,9 @@ def reconcile_import(import_id: str) -> dict[str, object]:
     for table in _tables(stored):
         role = _role(table.columns)
         for index, row in enumerate(table.rows):
-            mapping = mappings[table.filename]
+            mapping = mappings[table.file_id]
             raw[role].append(
-                _canonical_row(import_id, table.filename, role, row, mapping, index)
+                _canonical_row(import_id, table.file_id, role, row, mapping, index)
             )
     return reconcile_inputs(cast(dict[str, object], raw))
 
@@ -148,7 +149,7 @@ def _role_score(columns: tuple[str, ...], schema: tuple[str, ...]) -> tuple[int,
 
 def _canonical_row(
     import_id: str,
-    filename: str,
+    file_id: str,
     role: str,
     row: dict[str, str],
     mapping: dict[str, str],
@@ -160,7 +161,7 @@ def _canonical_row(
             if key.endswith("_paise"):
                 mapped[key] = parse_paise(mapped[key])
         if role == "bank_transactions":
-            mapped.setdefault("bank_transaction_id", f"{import_id}:{filename}:{index}")
+            mapped.setdefault("bank_transaction_id", f"{import_id}:{file_id}:{index}")
             mapped.setdefault("debit_paise", 0)
         if role == "reconciliation_rows":
             mapped.setdefault("fee_paise", 0)
@@ -197,6 +198,7 @@ def _inspection(import_id: str, tables: list[ParsedTable]) -> dict[str, object]:
         "import_id": import_id,
         "files": [
             {
+                "file_id": table.file_id,
                 "filename": table.filename,
                 "source_type": table.source_type,
                 "columns": list(table.columns),

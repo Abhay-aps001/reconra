@@ -173,7 +173,7 @@ def _benchmark_payload(
         "dataset": dataset,
         "mode": mode,
         "agent_provider_status": _agent_provider_status(mode, provider_status),
-        "output_directory": str(output_directory),
+        "output_directory": _output_directory_label(output_directory),
         "scoring_available": metrics.scoring_available,
         "scoring_unavailable_reason": _UNAVAILABLE_TRUTH_REASON,
         "total_records": metrics.total_records,
@@ -192,6 +192,14 @@ def _benchmark_payload(
             "denominator": metrics.records_per_second[1],
         },
     }
+
+
+def _output_directory_label(output_directory: Path) -> str:
+    """Avoid publishing an absolute local output path in benchmark artifacts."""
+    try:
+        return output_directory.resolve().relative_to(PROJECT_ROOT).as_posix()
+    except ValueError:
+        return output_directory.name
 
 
 def _agent_provider_status(mode: str, execution_status: str = "NO_RESIDUALS") -> str:

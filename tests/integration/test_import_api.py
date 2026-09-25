@@ -20,12 +20,13 @@ def test_import_requires_confirmation_before_existing_reconciliation_pipeline(mo
     )
     assert inspection.status_code == 200
     import_id = inspection.json()["import_id"]
+    file_id = inspection.json()["files"][0]["file_id"]
     assert client.post(f"/api/import/{import_id}/reconcile").status_code == 409
     validated = client.post(
         f"/api/import/{import_id}/validate",
         json={
             "mappings": {
-                "bank.csv": {
+                file_id: {
                     "Txn Date": "transaction_date",
                     "Narration": "description",
                     "Deposit Amt": "credit_paise",
@@ -38,6 +39,44 @@ def test_import_requires_confirmation_before_existing_reconciliation_pipeline(mo
     reconciled = client.post(f"/api/import/{import_id}/reconcile")
     assert reconciled.status_code == 200
     assert reconciliation_service.run_store.get(reconciled.json()["run_id"]) is not None
+
+
+def test_import_keeps_duplicate_filenames_in_separate_mapping_and_row_namespaces(
+    monkeypatch,
+) -> None:
+    monkeypatch.setattr(reconciliation_service, "run_store", RunStore())
+    from app.services import import_service
+
+    monkeypatch.setattr(import_service, "import_store", ImportStore())
+    client = TestClient(app)
+    headers = b"Txn Date,Narration,Deposit Amt,Ref No\n"
+    inspection = client.post(
+        "/api/import/inspect",
+        files=[
+            ("files", ("bank.csv", headers + b"2026-09-01,First,123.45,UTR-1\n", "text/csv")),
+            ("files", ("bank.csv", headers + b"2026-09-02,Second,200.00,UTR-2\n", "text/csv")),
+        ],
+    )
+
+    assert inspection.status_code == 200
+    import_id = inspection.json()["import_id"]
+    file_ids = [file["file_id"] for file in inspection.json()["files"]]
+    assert len(file_ids) == len(set(file_ids)) == 2
+    mapping = {
+        "Txn Date": "transaction_date",
+        "Narration": "description",
+        "Deposit Amt": "credit_paise",
+        "Ref No": "utr",
+    }
+    validated = client.post(
+        f"/api/import/{import_id}/validate",
+        json={"mappings": {file_id: mapping for file_id in file_ids}},
+    )
+
+    assert validated.status_code == 200
+    reconciled = client.post(f"/api/import/{import_id}/reconcile")
+    assert reconciled.status_code == 200
+    assert reconciled.json()["tie_out_summary"]["total_bank_credit_paise"] == 32_345
 
 
 def test_import_rejects_xlsm_traversal_and_scanned_pdf() -> None:
@@ -88,8 +127,9 @@ def test_invalid_date_or_datetime_is_a_typed_validation_failure_and_cannot_recon
         files=[("files", ("input.csv", f"{columns}\n{values}\n", "text/csv"))],
     )
     import_id = inspection.json()["import_id"]
+    file_id = inspection.json()["files"][0]["file_id"]
     validation = client.post(
-        f"/api/import/{import_id}/validate", json={"mappings": {"input.csv": mapping}}
+        f"/api/import/{import_id}/validate", json={"mappings": {file_id: mapping}}
     )
     assert validation.status_code == 400
     assert validation.json()["code"] == "INVALID_MAPPING_VALUE"

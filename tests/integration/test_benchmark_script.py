@@ -59,6 +59,20 @@ def test_unscored_benchmark_payload_omits_truth_derived_rates() -> None:
     }.isdisjoint(payload)
 
 
+def test_benchmark_payload_redacts_an_absolute_output_directory(tmp_path) -> None:
+    benchmark = _benchmark_module()
+
+    payload = benchmark._benchmark_payload(
+        dataset="heldout",
+        mode="deterministic",
+        output_directory=tmp_path / "benchmark-output",
+        result=_ResultStub(),
+        metrics=EvaluationReport.empty(total_records=4),
+    )
+
+    assert payload["output_directory"] == "benchmark-output"
+
+
 def test_unscored_benchmark_payload_includes_result_derived_operational_counts() -> None:
     benchmark = _benchmark_module()
     result = ReconciliationResult(

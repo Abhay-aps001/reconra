@@ -8,3 +8,8 @@ def display_paise(value: int) -> str:
     absolute = abs(value)
     rupees, paise = divmod(absolute, 100)
     return f"{sign}{rupees:,}.{paise:02d}"
+
+
+def escape_csv_text(value: str) -> str:
+    """Keep untrusted text cells inert when opened by spreadsheet software."""
+    return f"'{value}" if value.startswith(("=", "+", "-", "@")) else value

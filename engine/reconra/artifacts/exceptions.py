@@ -7,7 +7,7 @@ from pathlib import Path
 
 from reconra.models.result import ReconciliationResult
 
-from .money import display_paise
+from .money import display_paise, escape_csv_text
 
 
 def write_exception_worklist(result: ReconciliationResult, destination: Path) -> Path:
@@ -31,12 +31,12 @@ def write_exception_worklist(result: ReconciliationResult, destination: Path) ->
         for exception in sorted(result.exceptions, key=lambda item: item.exception_id):
             writer.writerow(
                 {
-                    "exception_id": exception.exception_id,
+                    "exception_id": escape_csv_text(exception.exception_id),
                     "break_class": exception.break_class.value,
                     "resolution_status": exception.resolution_status.value,
                     "financial_impact_paise": exception.financial_impact_paise,
                     "financial_impact_display": display_paise(exception.financial_impact_paise),
-                    "evidence": " | ".join(sorted(exception.evidence)),
+                    "evidence": escape_csv_text(" | ".join(sorted(exception.evidence))),
                 }
             )
     return path
