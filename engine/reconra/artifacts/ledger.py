@@ -7,7 +7,7 @@ from pathlib import Path
 
 from reconra.models.result import DeterministicMatch, ReconciliationResult
 
-from .money import display_paise
+from .money import display_paise, escape_csv_text
 
 
 def write_reconciled_ledger(result: ReconciliationResult, destination: Path) -> Path:
@@ -38,9 +38,9 @@ def write_reconciled_ledger(result: ReconciliationResult, destination: Path) -> 
 def _ledger_row(record_type: str, match: DeterministicMatch) -> dict[str, str | int]:
     return {
         "record_type": record_type,
-        "source_id": match.source_id,
-        "candidate_id": match.candidate_id,
+        "source_id": escape_csv_text(match.source_id),
+        "candidate_id": escape_csv_text(match.candidate_id),
         "financial_impact_paise": match.financial_impact_paise,
         "financial_impact_display": display_paise(match.financial_impact_paise),
-        "evidence": " | ".join(sorted(match.evidence)),
+        "evidence": escape_csv_text(" | ".join(sorted(match.evidence))),
     }

@@ -48,7 +48,7 @@ test("history saves a valid demo, opens saved-only fallback, and exports exact b
 
 test("import confirms mappings, validates, reconciles, and supports CSV/XLSX/text-table PDF selection", async ({ page }) => {
   const inspection = {
-    import_id: "import_123", warnings: [], files: [{ filename: "bank.csv", source_type: "csv", columns: ["Txn Date", "Narration", "Deposit Amt", "Ref No"], row_count: 1, sample_rows: [{ "Txn Date": "2026-01-01", Narration: "credit", "Deposit Amt": "1000", "Ref No": "utr_1" }], candidate_role: "bank_transactions", suggestions: [
+    import_id: "import_123", warnings: [], files: [{ file_id: "file_1", filename: "bank.csv", source_type: "csv", columns: ["Txn Date", "Narration", "Deposit Amt", "Ref No"], row_count: 1, sample_rows: [{ "Txn Date": "2026-01-01", Narration: "credit", "Deposit Amt": "1000", "Ref No": "utr_1" }], candidate_role: "bank_transactions", suggestions: [
       { source_column: "Txn Date", target_field: "transaction_date", confidence: 1, reason: "exact_alias" }, { source_column: "Narration", target_field: "description", confidence: 1, reason: "exact_alias" }, { source_column: "Deposit Amt", target_field: "credit_paise", confidence: 1, reason: "exact_alias" }, { source_column: "Ref No", target_field: "utr", confidence: 1, reason: "exact_alias" },
     ] }],
   };

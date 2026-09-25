@@ -19,6 +19,7 @@ class ParsedTable:
     source_type: str
     columns: tuple[str, ...]
     rows: tuple[dict[str, str], ...]
+    file_id: str = ""
 
 
 @dataclass(frozen=True)

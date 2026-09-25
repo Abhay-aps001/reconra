@@ -7,7 +7,7 @@
   "explained_bank_credit_paise": 132983672,
   "mode": "deterministic",
   "operational_outcome_count": 229,
-  "output_directory": "D:\\Projects\\reconra\\.worktrees\\reconciliation-engine\\docs\\evaluation\\heldout-deterministic",
+  "output_directory": "docs/evaluation/heldout-deterministic",
   "records_per_second": {
     "denominator": 14773600,
     "numerator": 184000000000

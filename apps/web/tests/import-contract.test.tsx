@@ -10,7 +10,7 @@ test("accepts only declared import formats and parses backend inspection data", 
   const inspection = parseInspection({
     import_id: "import_123",
     warnings: [],
-    files: [{ filename: "bank.csv", source_type: "csv", columns: ["Txn Date"], row_count: 1, sample_rows: [{ "Txn Date": "2026-01-01" }], candidate_role: "bank_transactions", suggestions: [{ source_column: "Txn Date", target_field: "transaction_date", confidence: 1, reason: "exact_alias" }] }],
+    files: [{ file_id: "file_1", filename: "bank.csv", source_type: "csv", columns: ["Txn Date"], row_count: 1, sample_rows: [{ "Txn Date": "2026-01-01" }], candidate_role: "bank_transactions", suggestions: [{ source_column: "Txn Date", target_field: "transaction_date", confidence: 1, reason: "exact_alias" }] }],
   });
   assert.equal(inspection.files[0].suggestions[0].target_field, "transaction_date");
 });

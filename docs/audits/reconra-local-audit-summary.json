@@ -1,0 +1,26 @@
+{
+  "audit": "reconra-full-local-acceptance",
+  "deployment_in_scope": false,
+  "overall_status": "PASS",
+  "counts": {
+    "passed": 19,
+    "fixed": 3,
+    "blocked": 3,
+    "critical_open": 0,
+    "high_open": 0,
+    "medium_open": 0,
+    "low_open": 0
+  },
+  "external_checks": {
+    "razorpay_test_mode_live": "BLOCKED",
+    "ai_provider_live": "BLOCKED",
+    "github_actions_observed": "BLOCKED"
+  },
+  "finance_invariants": {
+    "integer_paise_only": true,
+    "exact_conservation": true,
+    "ai_cannot_mutate_truth": true,
+    "deterministic_verifier_authoritative": true,
+    "false_positive_prevention_verified": true
+  }
+}
